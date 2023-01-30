@@ -40,8 +40,8 @@
                 </v-card-title>
                 <v-divider></v-divider>
                 <v-row>
-                    <v-col cols="12" xl="6" md="6" sm="12" v-for=" i in sistemas">
-                        <v-card shaped class="mx-auto mt-8 pa-5" color="" min-height="300">
+                    <v-col cols="12" xl="3" md="6" sm="12" v-for=" i in sistemas">
+                        <v-card shaped class="mx-auto mt-12 pa-5" color="" min-height="320">
                             <v-col>
                                 <v-row align="center" justify="center" class="fill-height">
                                     <v-col align-self="start" class="pa-0" cols="6" md="4" xs="12">
@@ -70,8 +70,8 @@
                                     </v-col>
                                     <div class="text-center">
 
-                                        <v-btn color="pink" fab absolute bottom dark right :to="i.src" >
-                                            -><v-icon>mdi-monitor-eye</v-icon>
+                                        <v-btn :color="page.color" fab absolute bottom large dark right :to="i.src" >
+                                            Ver<v-icon>mdi-monitor-eye</v-icon>
                                         </v-btn>
 
                                     </div>

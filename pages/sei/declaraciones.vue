@@ -60,7 +60,7 @@
 
                                             <v-hover>
 
-                                                <v-img slot-scope="{ hover }" v-if="hover" :src="require('@/static/img/botonera/'+ e.src2)">
+                                                <v-img slot-scope="{ hover }" v-if="hover" :src="require('@/static/img/botonera/'+ e.src1)">
                                                 </v-img>
                                                 <v-img v-else :src="require('@/static/img/botonera/'+ e.src1)">
                                                 </v-img>

@@ -2,16 +2,22 @@
   <v-app dark>
     <v-navigation-drawer 
       v-model="drawer"
-      :mini-variant="miniVariant"
+      :mini-variant.sync="miniVariant"
       :clipped="clipped"
+      
       width="auto"
+      :permanent="$vuetify.breakpoint.mdAndUp"
+      dark
+      :color="colorNav"
       fixed
       app
       
       
-    >
+    > 
       <v-list>
-        <v-list-item>
+
+      
+        <v-list-item  @click.stop="miniVariant = !miniVariant">
         <v-list-item-icon>
           <v-icon>mdi-apps</v-icon>
         </v-list-item-icon>
@@ -25,8 +31,9 @@
           router
           exact
           two-line
+          @click.stop="drawer = !drawer"
         >
-          <v-list-item-action>
+          <v-list-item-action >
             
           <div v-if="item.icon">  <v-icon :color="item.color">{{ item.icon }} </v-icon></div>
           <div v-if="item.avatar">  <v-avatar size="25"><img  :src="require('@/static/img/botonera/' + item.avatar)" alt="azimut"></v-avatar></div>
@@ -45,23 +52,29 @@
     <v-app-bar dark
       :clipped-left="clipped"
       fixed
-      color="#181818"
+      :color="colorNav"
+      
       app
     >
-     <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-
-      <v-btn
+     <v-app-bar-nav-icon  v-if="$vuetify.breakpoint.mdAndDown" @click.stop="drawer = !drawer" />
+      
+     
+      
+      <v-toolbar-title> <v-btn
         icon
         @click.stop="clipped = !clipped"
       >
-      <v-avatar size="25"> <img  src="@/static/img/sea-icon.png" alt="azimut"/></v-avatar>  
-      </v-btn>
-      
-      <v-toolbar-title> {{ title }} </v-toolbar-title>
+      <v-avatar size="25"> <img  src="@/static/img/sea-icon.png" alt="Icono Sea"/></v-avatar>  
+      </v-btn> {{ title }} </v-toolbar-title>
       
       <v-spacer />
+      <v-btn v-for="icon in icons" :href="icon.to"  class="mx-4 white--text" icon>
+                <v-icon size="24px">
+                    {{ icon.icon }}
+                </v-icon>
+            </v-btn>
       <v-switch
-        class="mt-4" 
+        class="mt-4 ml-8" 
         v-model="$vuetify.theme.dark"
         inset
         label="Modo Obscuro"
@@ -70,7 +83,9 @@
       ></v-switch>
     
     </v-app-bar>
+    
     <v-main>
+      <lineUp/>
       <v-container class="mb-8" >
         <Nuxt />
         
@@ -86,14 +101,20 @@
 </template>
 
 <script>
+import lineUp from '@/components/LineUp'
 import footerN from '@/components/Footer'
+
+
+
 export default {
   name: 'DefaultLayout',
   components: {
-    footerN
+    footerN,
+    lineUp
   },
   data () {
     return {
+      colorNav: '#1d2730',
       clipped: true,
       drawer: false,
       fixed: false,
@@ -161,10 +182,24 @@ export default {
           to: '/contacto'
         },
       ],
-      miniVariant: false,
+      miniVariant: true,
       right: true,
       rightDrawer: false,
-      title: 'Sea Coahuila'
+      title: 'Sea Coahuila',
+      icons: [{
+                icon: 'mdi-facebook',
+                to: 'https://www.facebook.com/seseacoah'
+            },
+            {
+                icon: 'mdi-twitter',
+                to: 'https://twitter.com/seseacoah?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Escreen-name%3Aseseacoah%7Ctwcon%5Es2'
+            },
+            {
+                icon: 'mdi-youtube',
+                to: 'https://www.youtube.com/@sistemaanticorrupciondeles8877'
+            }
+        ],
+        
     }
   }
 }

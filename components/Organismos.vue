@@ -1,6 +1,6 @@
-<template>
-<v-row justify="center" align="center" class="mt-5">
-    <v-col cols="12" align="center">
+<template >
+<v-card class="pa-4"><v-row justify="center" align="center" class="mt-5">
+    <v-col cols="12" align="center" >
         <h2>Organismos que integran el Sistema Estatal Anticorrupción</h2>
     </v-col>
     <v-col cols="12" lg="4" md="12">
@@ -80,7 +80,8 @@
         </v-alert>
     </v-col>
 
-</v-row>
+</v-row></v-card>
+
 </template>
 
 <script>

@@ -11,9 +11,18 @@
     
                 </v-alert>
     
-                <v-card class="mt-3 "  color="article">
+                <v-card class="mt-3 pa-10"  color="article">
                     <v-col aling="center" justify="center" >
-    
+
+                        <div align="center" class="mb-5 text-xl-h2 text-md-h3 ">Facebook</div>
+                        <div class="powr-social-feed" id="a2eea91e_1674247401"></div>
+                        
+                  
+                    </v-col>
+
+                    <v-col aling="center" justify="center" >
+                        <div align="center" class="mb-5 text-xl-h2 text-md-h3 ">Twitter</div>
+                        <div class="powr-social-feed" id="c1fd1c3c_1674248138"></div>
                   
                     </v-col>
     
@@ -29,7 +38,16 @@
     
     <script>
     export default {
-        name: 'sei',
+        name: 'publicaciones',
+        
+    metaInfo: {
+      script: [
+        { src: 'https://www.powr.io/powr.js?platform=html', async: true, defer: true },
+        { src: 'https://www.powr.io/powr.js?platform=html', async: true, defer: true },
+      ],
+    },
+  
+
         data() {
             return {
                 page: {
@@ -39,7 +57,15 @@
                 }
             }
     
-        }
+        },
+        mounted() {
+    const recaptchaScript = document.createElement("script");
+    recaptchaScript.setAttribute(
+      "src",
+      "https://www.powr.io/powr.js?platform=html"
+    );
+    document.head.appendChild(recaptchaScript);
+  },
     }
     </script>
     

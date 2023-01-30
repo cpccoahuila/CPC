@@ -8,6 +8,7 @@
                 <div align="center" class="mb-5 text-xl-h1 text-md-h3 ">{{page.title}}</div>
 
             </v-alert>
+            
 
             <v-card class="mt-10 pa-5" color="article">
                 <v-row class="mt-5" v-for=" e in page.presentacion">
@@ -35,8 +36,8 @@
                     <div class=" text-xl-h2 text-md-h4"> Miembros que integran el comité coordinador</div>
                 </v-card-title>
                 <v-row>
-                    <v-col cols="12" md="4" sm="12" v-for=" i in integrantes">
-                        <v-card shaped class="mx-auto mt-8 pa-3" color="cc" min-height="300" light>
+                    <v-col cols="12" xl="4" lg="6" sm="12" v-for=" i in integrantes">
+                        <v-card shaped class="mx-auto mt-8 pa-3" color="cc" min-height="330" light>
                             <v-col>
                                 <v-row align="center" class="fill-height">
                                     <v-col align-self="start" class="pa-0" cols="6">
@@ -60,14 +61,22 @@
                                                 </v-list-item-title>
                                                 <v-list-item-text>{{ i.cargo }}</v-list-item-text>
                                             </v-list-item-content>
+
                                         </v-list-item>
+                                        <v-btn :href="i.web" color="blue lighten-2" text>
+                                            <v-icon left>
+                                                mdi-link
+                                            </v-icon>
+
+                                            Sitio web
+                                        </v-btn>
                                     </v-col>
 
                                 </v-row>
 
                             </v-col>
                             <div class="text-center">
-                                <v-dialog v-model="i.dialog" width="80%">
+                                <v-dialog v-model="i.dialog" max-width="900px">
                                     <template v-slot:activator="{ on, attrs }">
                                         <v-btn :color="page.color" fab small dark absolute top right v-on="on">
                                             <v-icon>mdi-plus</v-icon>
@@ -81,9 +90,9 @@
                                             </v-card-title>
 
                                             <v-card-text>
-                                                <v-list>
+                                                <v-list> 
                                                     <v-list-item v-for=" item in e.lista" dense>
-                                                        {{ item }}
+                                                    <v-icon>mdi-fountain-pen-tip</v-icon>    {{ item }}
                                                     </v-list-item>
                                                 </v-list>
 
@@ -135,7 +144,7 @@
                         <v-card-actions class="justify-center">
                             <!-- :href="require('@/pages/transparencia/art20/' + e.src)" -->
                             <v-row justify="center">
-                                <v-btn class="ma-2" v-for=" e in informes" label  color="" max-width="100%">{{ e.year }}</v-btn>
+                                <v-btn class="ma-2" v-for=" e in informes" label color="" max-width="100%">{{ e.year }}</v-btn>
                             </v-row>
                         </v-card-actions>
 
@@ -203,6 +212,7 @@ export default {
                     cargo: 'Consejera Presidente del Consejo de Participación Ciudadana.',
                     foto: 'cpc-jpv.jpg',
                     img: 'cc-cpc.png',
+                    web: 'http://www.cpccoahuila.org.mx/',
                     curriculum: [{
                             subtitulo: 'Formación Académica',
                             lista: ['Licenciada en Derecho con Maestría en Ciencias Jurídicas con Acentuación en Derecho Laboral Internacional, diplomado en justicia administrativa y fiscal, actualmente culminando estudios de maestría en Derechos Humanos con perspectiva internacional y comparada, en la Academia Interamericana de Derechos Humanos de la U. A. de C.']
@@ -229,6 +239,7 @@ export default {
                     cargo: 'Presidente del Tribunal Superior de Justicia y del Consejo de la Judicatura del Poder Judicial del Estado de Coahuila de Zaragoza.',
                     foto: 'cc-pjecz-mfma.jpg',
                     img: 'cc-pjecz.png',
+                    web: 'https://www.pjecz.gob.mx/',
                     curriculum: [{
                             subtitulo: 'Formación Académica',
                             lista: [
@@ -279,6 +290,7 @@ export default {
                     cargo: 'Auditor Superior del Estado de Coahuila de Zaragoza.',
                     foto: 'cc-asec-as.png',
                     img: 'cc-asec.png',
+                    web: 'https://www.asecoahuila.gob.mx/',
                     curriculum: [{
                             subtitulo: 'Datos Profesionales',
                             lista: ['Contador Público (1981-1985), por la Universidad Autónoma de Coahuila, Torreón, Coahuila']
@@ -312,6 +324,7 @@ export default {
                     cargo: 'Titular de la Fiscalía Especializada en Delitos por Hechos de Corrupción.',
                     foto: 'cc-fech-jhfm.jpg',
                     img: 'cc-fehc.png',
+                    web: 'https://www.fehc.gob.mx/',
                     curriculum: [{
                             subtitulo: 'Datos Profesionales',
                             lista: [
@@ -357,6 +370,7 @@ export default {
                     cargo: 'Secretaria de Fiscalización y Rendición de Cuentas del Estado de Coahuila de Zaragoza.',
                     foto: 'cc-sefirc-tgb.jpg',
                     img: 'cc-sefirc.png',
+                    web: 'http://www.sefircoahuila.gob.mx/',
                     curriculum: [{
                             subtitulo: 'Formación Académica',
                             lista: [
@@ -392,6 +406,7 @@ export default {
                     cargo: 'Comisionado Presidente del Instituto Coahuilense de Acceso a la Información Pública.',
                     foto: 'cc-icai-lgb.jpg',
                     img: 'cc-ica.png',
+                    web: 'http://www.icai.org.mx/',
                     curriculum: [{
                             subtitulo: 'Formación Académica',
                             lista: [
@@ -432,6 +447,7 @@ export default {
                     cargo: 'Magistrado Presidente del Tribunal de Justicia Administrativa de Coahuila de Zaragoza.',
                     foto: 'cc-tjacz.jpg',
                     img: 'cc-tjacz.png',
+                    web: 'http://www.tjacoahuila.org/',
                     curriculum: [{
                             subtitulo: 'Formación Académica',
                             lista: [

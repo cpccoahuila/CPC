@@ -43,7 +43,7 @@ export default {
         return {
             page: {
                 color: 'pink',
-                title: 'Secretaría ejecutiva',
+                title: 'Secretaría Ejecutiva',
                 icon: 'mdi-cogs',
                 presentacion: [{
                         titulo: 'Funciones',

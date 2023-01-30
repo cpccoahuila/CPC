@@ -69,7 +69,8 @@ export default {
           bluegreyt: '#37474F',
           cc: '#F7F3DF ',
           peac: '#191501 ',
-          sei: '#2a2f30'
+          sei: '#2a2f30',
+          revista: '#1a000d'
         },
         light: {
           primary: colors.blue.lighten2,
@@ -84,7 +85,9 @@ export default {
           cc: '#F5F5F5',
           peac: '#FBF8EE',
           sei: '#F5F5F5',
-          seicard: '#37474F'
+          seicard: '#37474F',
+          revista: '#f7edf2',
+          cpc: '#EDE7F6',
         }
       }
     }

@@ -33,7 +33,44 @@
 
             </v-card>
 
-            <v-card class="mt-3 mb-3" color="peac">
+            <v-card color="peac" class="pa-5 mt-12">
+
+                <v-card-title class=" justify-center">
+                    <div class=" text-xl-h4 text-md-h5 mt-5">
+                        <v-avatar size="40" tile>
+
+                            <img :src="require('@/pages/sei/icons/logo_SEI.png')" alt="alt">
+                        </v-avatar>
+
+                        Sistema Estatal de servidores públicos en contrataciónes
+                    </div>
+                </v-card-title>
+                <v-divider></v-divider>
+
+                <v-card-text align="center" class="pa-12">
+
+                    <p class="text-h5">Que es?</p>
+                    <p>Es un sistema que establece el mecanismo para que todas las dependencias y entidades de la Administración Pública, identifiquen y clasifiquen el nivel de responsabilidad de los servidores públicos que participan en los procedimientos de contratación. El objetivo es incrementar la eficiencia de los procesos y procedimientos del sistema para que las instituciones puedan llevar a cabo el desarrollo implementado, en tiempo y forma.</p>
+
+                </v-card-text>
+                <v-divider class="ma-8"></v-divider>
+                <v-card-text align="center" class="pa-6">
+
+                    <p class="text-h5">Formato de pre-inscripción para incorporar el sistema dirigido las entidades públicas del Estado</p>
+
+                    <p class="text-justify">
+                        Con la finalidad de establecer un canal directo es necesaria la integración de el sistema con cada una de las instituciónes de Coahuila. Las instituciónes por medio de un servidor públicos
+                        en cualquera sus áreas involucradas, como titulares de área, directivos, administrativos, recursos humanos, cabildos podrán acceder y llevar a cabo
+                        el registro y seguimiento para incorporas a la instutución en dichos procesos. </p>
+                    <p>Para instituciónes públicas del estado de Coahuila interesadas en incorporar el sistema estatal de servidores públicos en procesos de contratación le invitamos a llenar este formato de pre-registro.
+
+                    </p>
+                    <v-btn elevation="3" :color="page.color" dark href="#"> Regístro de instituciónes públicas</v-btn>
+                </v-card-text>
+
+            </v-card>
+
+            <v-card class="mt-3 mb-3" cr="peac">
                 <v-col aling="center" justify="center">
                     <v-row justify="center" align="center" class="mt-5">
 
@@ -106,7 +143,7 @@ export default {
         return {
             page: {
                 color: 'pink darken-3',
-                title: 'Servidores en contrataciones',
+                title: 'Servidores en Contrataciones',
                 sub: 'Sistema de los servidores públicos que intervengan en procedimientos de contrataciones públicas',
                 icon: 'mdi-account-tie-outline'
             },
@@ -174,7 +211,7 @@ export default {
 
         this.$axios.$post('https://pdncoah-6npsxhllvq-wl.a.run.app/Home/GetTabla?NombreTabla=Servidores&FechaIni=2021-01-01&FechaFin=2023-01-10')
             .then((result) => {
-                console.log(result)
+
                 this.servidores = result
                 this.loading = false
             }).catch((err) => {

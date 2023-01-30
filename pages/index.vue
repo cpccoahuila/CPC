@@ -1,9 +1,14 @@
 <template>
 <div>
-    <Carrusel />
+ 
+
     <v-container>
-        <Organismos />
+        
+        <Carrusel />
+      
         <Data />
+   <Organismos />
+        
     </v-container>
 </div>
 </template>
@@ -12,12 +17,14 @@
 import Carrusel from '@/components/Carousel'
 import Organismos from '@/components/Organismos'
 import Data from '@/components/Datos'
+import lineUp from '@/components/LineUp'
 export default {
     name: 'IndexPage',
     components: {
         Carrusel,
         Organismos,
-        Data
+        Data,
+        lineUp
     }
 }
 </script>

@@ -10,7 +10,7 @@
             </v-alert>
 
         </v-col>
-        <v-col cols="10">
+        <v-col cols="12">
             <v-card class=" pa-7 " color="article" cols="6">
                 <v-card-title> Objetivo</v-card-title>
                 <v-card-text align="center" justify="center" class="text-justify">
@@ -25,12 +25,15 @@
             </v-card>
         </v-col>
 
-        <v-col cols="10">
+        <v-col cols="12" >
+            <v-card class="pa-8"  color="revista">
+                <div align="center" class="mb-8 text-xl-h2 text-md-h3 ">Revista</div>
 
+                    <v-divider></v-divider>
             <v-row>
-                <v-col  v-for="e in page.revistas">
-                    
-                    <v-card class="mx-auto" max-width="356" dark shaped>
+                <v-col v-for="e in page.revistas">
+
+                    <v-card class="mx-auto mt-5" max-width="356" dark color='#800040' shaped>
                         <v-img :src="require('@/pages/azimut/revistas/' + e.img)" height="500"></v-img>
 
                         <v-card-title>
@@ -42,30 +45,20 @@
                         </v-card-subtitle>
 
                         <v-card-actions>
-                            <v-btn color="pink" :href="require('@/pages/azimut/revistas/' + e.doc)" text download>
+                            <v-btn color="#f2e394" :href="require('@/pages/azimut/revistas/' + e.doc)" text download>
                                 Descargar
                             </v-btn>
-                            <v-btn color="pink" :href="require('@/pages/azimut/revistas/' + e.doc)" text>
+                            <v-btn color="" :href="require('@/pages/azimut/revistas/' + e.doc)" text>
                                 Ver
                             </v-btn>
 
-                            <v-spacer></v-spacer>
-
                         </v-card-actions>
 
-                        <v-expand-transition>
-                            <div v-show="show">
-                                <v-divider></v-divider>
-
-                                <v-card-text>
-                                    I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.
-                                </v-card-text>
-                            </div>
-                        </v-expand-transition>
                     </v-card>
                 </v-col>
 
             </v-row>
+ </v-card>
 
         </v-col>
     </v-row>
