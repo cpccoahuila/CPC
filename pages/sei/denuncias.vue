@@ -14,7 +14,7 @@
 
                 <v-col align="center" justify="center">
                     <v-row>
-                        <v-col cols="12" md="4" xs="12" v-for=" e in botones">
+                        <v-col cols="12" md="4" xs="12" v-for="(e,i) in botones" :key="i">
                             <v-card color="bluegreyt" :href="e.doc">
 
                                 <v-card-actions class="justify-center">
@@ -94,7 +94,7 @@
             <v-divider></v-divider>
                 <v-col align="center" justify="center">
                     <v-row>
-                        <v-col cols="12" md="4" sm="6" v-for=" e in botonesSec">
+                        <v-col cols="12" md="4" sm="6" v-for="(e,i) in botonesSec" :key="i">
                             <v-card color="bluegreyt" :href="e.to">
 
                                 <v-card-actions class="justify-center">
@@ -122,7 +122,7 @@
                 <v-col align="center" justify="center">
                     <v-row justify="center" align="center" class="mt-5">
 
-                        <v-col cols="12" lg="8" sm="12" v-for="e in btnitem">
+                        <v-col cols="12" lg="8" sm="12" v-for="(e,i) in btnitem" :key="i">
 
                             <v-card class="pa-2 mb-10 mx-auto text-justify" tile color="article">
                                 <v-row align="center">
@@ -169,7 +169,7 @@
 
 <script>
 export default {
-    name: 'sei',
+    name: 'denuncias',
     data() {
         return {
             page: {

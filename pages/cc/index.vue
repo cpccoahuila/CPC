@@ -11,7 +11,7 @@
             
 
             <v-card class="mt-10 pa-5" color="article">
-                <v-row class="mt-5" v-for=" e in page.presentacion">
+                <v-row class="mt-5" v-for="(e,i) in page.presentacion" :key="i">
                     <v-col aling="center" justify="center">
                         <v-card-title class="justify-center">
                             <div class=" text-xl-h3 text-md-h4"> {{e.titulo}}</div>
@@ -36,7 +36,7 @@
                     <div class=" text-xl-h2 text-md-h4"> Miembros que integran el comité coordinador</div>
                 </v-card-title>
                 <v-row>
-                    <v-col cols="12" xl="4" lg="6" sm="12" v-for=" i in integrantes">
+                    <v-col cols="12" xl="4" lg="6" sm="12" v-for="(i,index) in integrantes" :key="index">
                         <v-card shaped class="mx-auto mt-8 pa-3" color="cc" min-height="330" light>
                             <v-col>
                                 <v-row align="center" class="fill-height">
@@ -84,14 +84,14 @@
                                     </template>
 
                                     <v-card>
-                                        <div v-for=" e in i.curriculum">
+                                        <div v-for="(e,index) in i.curriculum" :key="index">
                                             <v-card-title class="bluegreyt">
                                                 {{e.subtitulo}}
                                             </v-card-title>
 
                                             <v-card-text>
                                                 <v-list> 
-                                                    <v-list-item v-for=" item in e.lista" dense>
+                                                    <v-list-item v-for=" (item,i) in e.lista" :key="i" dense>
                                                     <v-icon>mdi-fountain-pen-tip</v-icon>    {{ item }}
                                                     </v-list-item>
                                                 </v-list>
@@ -144,7 +144,7 @@
                         <v-card-actions class="justify-center">
                             <!-- :href="require('@/pages/transparencia/art20/' + e.src)" -->
                             <v-row justify="center">
-                                <v-btn class="ma-2" v-for=" e in informes" label color="" max-width="100%">{{ e.year }}</v-btn>
+                                <v-btn class="ma-2" v-for="(e,i) in informes" :key="i" label color="" max-width="100%">{{ e.year }}</v-btn>
                             </v-row>
                         </v-card-actions>
 

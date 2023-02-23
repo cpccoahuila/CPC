@@ -2,7 +2,7 @@
 <v-footer dark padless>
     <v-card flat tile class=" text-center" width="100%" color="#1d2730">
         <v-card-text>
-            <v-btn v-for="icon in icons" :href="icon.to"  class="mx-4 white--text" icon>
+            <v-btn v-for="(icon,i) in icons" :href="icon.to" :key="i" class="mx-4 white--text" icon>
                 <v-icon size="24px">
                     {{ icon.icon }}
                 </v-icon>

@@ -8,7 +8,7 @@
                 <div align="center" class="mb-5 text-xl-h1 text-md-h3 text-h4">{{(page.title)}}</div>
 
             </v-alert>
-            <div v-for=" e in page.contactos">
+            <div v-for="(e,i) in page.contactos" :key="i">
 
                 <v-card class="mt-8" color="article">
                     <v-row>
@@ -20,7 +20,7 @@
                         <v-col cols="6">
 
                             <div class="mb-5 text-xl-h4 text-md-h5 ">{{ e.dependencia }}</div>
-                            <div class="mb-5 text-subtitle-2 font-weight-bold" v-for=" i in e.datos"> {{ i }}</div>
+                            <div class="mb-5 text-subtitle-2 font-weight-bold" v-for="(i,index) in e.datos" :key="index"> {{ i }}</div>
                             <div v-if=" e.dependencia === 'Secretaría Ejecutiva'">
 
                                 <v-btn href="https://www.google.com/maps/dir//Secretar%C3%ADa+Ejecutiva+del+Sistema+Anticorrupci%C3%B3n+del+Estado+de+Coahuila+de+Zaragoza,+Blvd.+Luis+Donaldo+Colosio+No.+703.+Piso+3,+Fraccionamiento+Valle+Real,+25205+Saltillo,+Coah.,+M%C3%A9xico/@25.4705483,-100.9604294,18z/data=!4m8!4m7!1m0!1m5!1m1!1s0x86881331ebb6aadd:0x2c4069ae06e6a973!2m2!1d-100.9604294!2d25.4705483 ">

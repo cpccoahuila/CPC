@@ -10,7 +10,7 @@
             </v-alert>
 
             <v-card class="mt-10 pa-5" color="article">
-                <v-row class="mt-5" v-for=" e in page.presentacion">
+                <v-row class="mt-5" v-for="(e,index) in page.presentacion" :key="index">
                     <v-col align="center" justify="center">
                         <v-card-title align-self="center" class="justify-center">
                             <div class=" text-xl-h3 text-md-h4"> {{e.titulo}}</div>
@@ -35,7 +35,7 @@
                     <div class=" text-xl-h2 text-md-h4"> Miembros que integran el CPC </div>
                 </v-card-title>
                 <v-row>
-                    <v-col cols="12" md="4" sm="12" v-for=" i in integrantes">
+                    <v-col cols="12" md="4" sm="12" v-for="(i,index) in integrantes" :key="index">
                         <v-card shaped class="mx-auto mt-8 pa-3" color="cc" min-height="300" light>
                             <v-col>
                                 <v-row align="center" class="fill-height">
@@ -170,7 +170,7 @@
 
                     <p class="text-h5 justify-center" align="center">Integrantes de la Red de Participación Ciudadana</p>
 
-                    <v-timeline v-for=" i in integrantesRed">
+                    <v-timeline v-for="(i,index) in integrantesRed" :key="index">
                         <v-timeline-item small right color="pink">{{ i }}</v-timeline-item>
 
                     </v-timeline>
@@ -207,7 +207,7 @@
                         <v-card-actions class="justify-center">
                             <!-- :href="require('@/pages/transparencia/art20/' + e.src)" -->
                             <v-row justify="center">
-                                <v-btn class="ma-2" v-for=" e in informes" label color="" max-width="100%" :href="e.src">{{ e.year }}</v-btn>
+                                <v-btn class="ma-2" v-for="(e,index) in informes" :key="index" label color="" max-width="100%" :href="e.src">{{ e.year }}</v-btn>
                             </v-row>
                         </v-card-actions>
 
@@ -223,7 +223,7 @@
 
 <script>
 export default {
-    name: 'sei',
+    name: 'CPC',
     data() {
         return {
             page: {

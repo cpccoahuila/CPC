@@ -68,7 +68,7 @@
       </v-btn> {{ title }} </v-toolbar-title>
       
       <v-spacer />
-      <v-btn v-for="icon in icons" :href="icon.to"  class="mx-4 white--text" icon>
+      <v-btn v-for="(icon,i) in icons" :href="icon.to" :key="i" class="mx-4 white--text" icon>
                 <v-icon size="24px">
                     {{ icon.icon }}
                 </v-icon>
@@ -86,9 +86,11 @@
     
     <v-main>
       <lineUp/>
-      <v-container class="mb-8" >
+      <v-container class="mb-8 pa-3" >
+        <v-row justify="center">
+        <v-col cols="12" xl="11">
         <Nuxt />
-        
+        </v-col></v-row>
       </v-container>
       <footerN />
     </v-main>
@@ -103,7 +105,7 @@
 <script>
 import lineUp from '@/components/LineUp'
 import footerN from '@/components/Footer'
-
+import {mapActions} from 'vuex'
 
 
 export default {
@@ -201,6 +203,20 @@ export default {
         ],
         
     }
-  }
+  },
+  methods:{
+    ...mapActions(['readUserLocalStorage'])
+  },
+  created(){
+    
+    this.readUserLocalStorage()
+    },
+  //   beforeMount() {
+  //     this.readUserLocalStorage()
+    
+  // },
+  // beforeCreate(){
+  //   this.readUserLocalStorage()
+  // }
 }
 </script>

@@ -1,5 +1,5 @@
 <template>
-<v-container>
+<v-container class="min-height-vh ">
 
     <v-row>
         <v-col>
@@ -10,7 +10,7 @@
             </v-alert>
 
             <v-card class="mt-10 pa-5" color="article">
-                <v-row class="mt-5" v-for=" e in page.presentacion">
+                <v-row class="mt-5" v-for="(e,i) in page.presentacion" :key="i">
                     <v-col aling="center" justify="center">
                         <v-card-title class="justify-center">
                             <div class=" text-xl-h3 text-md-h4"> {{e.titulo}}</div>
@@ -69,5 +69,7 @@ export default {
 
     
 <style lang="scss" scoped>
-
+  .min-height-vh {
+    min-height: 70vh;
+  }
     </style>

@@ -14,8 +14,8 @@
 
                 <v-col align="center" justify="center">
                     <v-row>
-                        <v-col cols="12" md="4" xs="12" v-for=" e in botones">
-                            <v-card color="bluegreyt" href="#">
+                        <v-col cols="12" md="4" xs="12" v-for="(e,i)  in botones" :key="i">
+                            <v-card color="bluegreyt" :href="e.href">
 
                                 <v-card-actions class="justify-center">
                                     <v-avatar size="35" tile>
@@ -77,7 +77,7 @@
                         <v-col cols="12" align="center">
 
                         </v-col>
-                        <v-col cols="12" lg="8" sm="12" v-for="e in btnitem">
+                        <v-col cols="12" lg="8" sm="12" v-for="(e,i) in btnitem" :key="i">
 
                             <v-card class="pa-2 mb-10 mx-auto text-justify" tile color="article">
                                 <v-row align="center">
@@ -138,7 +138,7 @@
 
 <script>
 export default {
-    name: 'sei',
+    name: 'servidores',
     data() {
         return {
             page: {
@@ -150,12 +150,17 @@ export default {
             botones: [{
                     titulo: 'Bases Plataforma Nacional Digital',
                     icon: 'estandar de datos.png',
-                    doc: ''
+                    href: '#'
                 },
                 {
                     titulo: 'Diccionario de datos',
                     icon: 'datos abiertos.png',
-                    doc: ''
+                    href: '#'
+                },
+                {
+                    titulo: 'Log-In-Instituciones',
+                    icon: 'folder-account-outline.png',
+                    href: '/admin/'
                 },
 
             ],

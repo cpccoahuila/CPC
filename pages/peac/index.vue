@@ -13,7 +13,7 @@
             <v-card class="mt-3 ">
                 <v-col align="center" justify="center">
                     <v-row>
-                        <v-col cols="12" md="3" xs="12" v-for=" e in botones">
+                        <v-col cols="12" md="3" xs="12" v-for="(e,i) in botones" :key="i">
                             <v-card color="bluegreyt" href="#">
 
                                 <v-card-actions class="justify-center">
@@ -39,7 +39,7 @@
                         <v-col cols="12" align="center">
 
                         </v-col>
-                        <v-col cols="12" lg="8" sm="12" v-for="e in btnitem">
+                        <v-col cols="12" lg="8" sm="12" v-for="(e,i) in btnitem" :key="i">
 
                             <v-card class="pa-2 mb-10 mx-auto text-justify" tile color="article">
                                 <v-row align="center">
@@ -83,7 +83,7 @@
 
                 <v-col align="center" justify="center">
                     <v-row>
-                        <v-col cols="12" md="3" xs="12" v-for=" e in botonesSec">
+                        <v-col cols="12" md="3" xs="12" v-for="(e,i) in botonesSec" :key="i">
                             <v-card color="bluegreyt" href="#">
 
                                 <v-card-actions class="justify-center">

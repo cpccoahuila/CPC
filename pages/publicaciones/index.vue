@@ -1,7 +1,7 @@
 
 
 <template>
-    <v-container >
+    <v-container  class="min-height-vh">
     
         <v-row>
             <v-col>
@@ -70,6 +70,8 @@
     </script>
     
     <style lang="scss" scoped>
-    
+      .min-height-vh {
+    min-height: 70vh;
+  }
     </style>
     

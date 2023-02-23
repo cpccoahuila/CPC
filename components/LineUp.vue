@@ -3,7 +3,7 @@
     <v-card class="pa-3"  color="#f0f0f0">
         <v-row justify="center" >
 
-            <v-col align-self="center"  align="center"  class="pa-1" cols="1" lg="" v-for=" i in cc">
+            <v-col align-self="center"  align="center"  class="pa-1" cols="1" lg="" v-for=" (i,index) in cc" :key="index">
 
                 <v-img :width="i.size - 40" 
                 :lazy-src="require('@/static/img/' + i.img)"

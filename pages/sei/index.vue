@@ -14,7 +14,7 @@
 
                 <v-col align="center" justify="center">
                     <v-row>
-                        <v-col cols="12" md="4" xs="12" v-for=" e in botones">
+                        <v-col cols="12" md="4" xs="12" v-for="(e,i) in botones" :key="i">
                             <v-card color="bluegreyt" href="#">
 
                                 <v-card-actions class="justify-center">
@@ -40,7 +40,7 @@
                 </v-card-title>
                 <v-divider></v-divider>
                 <v-row>
-                    <v-col cols="12" xl="3" md="6" sm="12" v-for=" i in sistemas">
+                    <v-col cols="12" xl="3" md="6" sm="12" v-for="(i,index) in sistemas" :key="index">
                         <v-card shaped class="mx-auto mt-12 pa-5" color="" min-height="320">
                             <v-col>
                                 <v-row align="center" justify="center" class="fill-height">
@@ -95,7 +95,7 @@
 
 <script>
 export default {
-    name: 'sei',
+    name: 'SEI',
     data() {
         return {
             page: {

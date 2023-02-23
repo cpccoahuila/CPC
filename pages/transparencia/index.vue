@@ -44,7 +44,7 @@
                         </v-card-actions>
                         <v-card-actions class="justify-center">
                             <v-chip-group column>
-                                <v-chip v-for=" e in art20" label outlined color="info" max-width="100%" :href="require('@/pages/transparencia/art20/' + e.src)" download>{{ e.año }}</v-chip>
+                                <v-chip v-for="(e,i) in art20" :key="i" label outlined color="info" max-width="100%" :href="require('@/pages/transparencia/art20/' + e.src)" download>{{ e.año }}</v-chip>
                             </v-chip-group>
                         </v-card-actions>
 

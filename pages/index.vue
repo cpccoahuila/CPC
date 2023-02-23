@@ -14,6 +14,7 @@
 </template>
 
 <script>
+
 import Carrusel from '@/components/Carousel'
 import Organismos from '@/components/Organismos'
 import Data from '@/components/Datos'
@@ -25,6 +26,9 @@ export default {
         Organismos,
         Data,
         lineUp
-    }
+    },
+
+
+
 }
 </script>

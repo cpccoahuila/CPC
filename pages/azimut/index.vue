@@ -31,7 +31,7 @@
 
                     <v-divider></v-divider>
             <v-row>
-                <v-col v-for="e in page.revistas">
+                <v-col v-for="(e,i) in page.revistas" :key="i">
 
                     <v-card class="mx-auto mt-5" max-width="356" dark color='#800040' shaped>
                         <v-img :src="require('@/pages/azimut/revistas/' + e.img)" height="500"></v-img>

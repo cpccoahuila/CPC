@@ -6,7 +6,7 @@
             <v-col cols="12" align="center" >
                 
             </v-col>
-            <v-col cols="12" lg="8" sm="12" v-for="e in btnitem">
+            <v-col cols="12" lg="8" sm="12" v-for="(e,i) in btnitem" :key="i">
 
                 <v-card class="pa-2 mx-auto text-justify" tile color="article"  >
                     <v-row align="center">
