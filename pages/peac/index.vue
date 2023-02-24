@@ -114,7 +114,7 @@ export default {
         return {
             page: {
                 color: 'amber',
-                title: 'Política Estatal Anticorrupción',
+                title: 'Política Estatal Anticorrupción.',
                 icon: 'mdi-dots-horizontal'
             },
             botones: [{
