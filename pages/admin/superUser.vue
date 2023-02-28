@@ -42,42 +42,41 @@
 
                             <v-form ref="form" v-model="valid" >
                                 <v-row class="mt-4">
-
-                                    <v-col cols="12" lg="4">
-                                        <v-text-field label="Nombre" dense v-model="Nombres" :counter="50" required
-                                            :rules="notNullRule"></v-text-field>
+                                    
+                                    <v-col cols="12" lg="4" md="6">
+                                        <v-text-field label="Nombre" dense v-model="Nombres" :counter="50" required  :rules="notNullRule"></v-text-field>
                                     </v-col>
-                                    <v-col cols="12" lg="4">
+                                    <v-col cols="12" lg="4" md="6">
                                         <v-text-field label="Primer Apellido" dense v-model="PrimerApellido" :counter="25"
                                             required :rules="notNullRule"></v-text-field>
                                     </v-col>
-                                    <v-col cols="12" lg="4">
+                                    <v-col cols="12" lg="4" md="6">
                                         <v-text-field label="Segundo Apellido" dense v-model="SegundoApellido" :counter="25"
-                                            required :rules="notNullRule"></v-text-field>
+                                            required :rules="notNullRule">
+                                        </v-text-field>
                                     </v-col>
-                                    <v-col cols="12" lg="6">
+                                    <v-col cols="12" lg="4" md="6">
                                         <v-text-field label="Correo" type="email" dense v-model="Correo" :counter="50"
                                             required :rules="emailRules"></v-text-field>
                                     </v-col>
-                                    <v-col cols="12" lg="6">
+                                    <v-col cols="12" lg="4" md="6">
                                         <v-text-field label="Teléfono" type="number" dense v-model="telefono" :counter="10"
                                             required :rules="notNullRule"></v-text-field>
                                     </v-col>
-                                    <v-col cols="12" lg="6">
-                                        <v-text-field dense v-model="nombreInstitucion" :rules="notNullRule" :counter="50"
-                                            label="Nombre de la Institución" required></v-text-field>
-                                    </v-col>
-                                    <v-col cols="12" lg="6">
-                                        <v-text-field dense v-model="siglasInstitucion" :rules="notNullRule" :counter="25"
-                                            label="Siglas de la Institución" required></v-text-field>
-                                    </v-col>
-                                    <v-col cols="12" >
+                                    <v-col cols="12" lg="4" md="6">
                                         <v-text-field dense v-model="puestoActual" :rules="notNullRule" :counter="50"
                                             label="Puesto Actual" required></v-text-field>
                                     </v-col>
-
-
-                                    <v-col cols="12">
+                                    <v-col cols="12" lg="4" md="6">
+                                        <v-text-field dense v-model="nombreInstitucion" :rules="notNullRule" :counter="50"
+                                            label="Nombre de la Institución" required></v-text-field>
+                                    </v-col>
+                                    <v-col cols="12" lg="4" md="6">
+                                        <v-text-field dense v-model="siglasInstitucion" :rules="notNullRule" :counter="25"
+                                            label="Siglas de la Institución" required></v-text-field>
+                                    </v-col>
+                                 
+                                    <v-col cols="12"  lg="4">
                                         <v-select v-model="Role" :rules="notNullRule" required dense :items=roles
                                             label="Rol de usuario"></v-select>
 
@@ -102,6 +101,27 @@
 
                 </v-col>
 
+                <v-cols cols="12">
+                    <template>
+                        <v-card-title>
+                <v-text-field
+                    v-model="search"
+                    append-icon="mdi-magnify"
+                    label="Buscar"
+                    single-line
+                    hide-details
+                ></v-text-field>
+                </v-card-title>
+                <v-data-table
+                    dense
+                    :headers="nombresColumnas"
+                    :items="AllUsers"
+                    item-key="name"
+                    class="elevation-1"
+                ></v-data-table>
+                </template>
+
+                </v-cols>
             </v-row>
 
 
@@ -124,6 +144,7 @@ export default {
                 icon: 'mdi-cogs'
             },
             nuevaInstitucion: false,
+            search: '',
             hidden: true,
             valid: false,
             loading: false,
@@ -144,7 +165,23 @@ export default {
             Role: '',
             puestoActual:'',
             Password: '1q2w3e',
-            esAdmin: false
+            esAdmin: false,
+            AllUsers: [],
+            nombresColumnas: [
+                {text: 'Nombre', value: 'Nombres'},
+                {text: 'Primer Apellido', value: 'PrimerApellido'},
+                {text: 'Segundo Apellido', value: 'SegundoApellido'},
+                {text: 'Segundo Apellido', value: 'SegundoApellido'},
+                {text: 'Teléfono', value: 'Telefono'},
+                {text: 'Dependencia', value: 'Dependencia.Dependencia'},
+                {text: 'ROL', value: 'Role'},
+                {text: 'Usuario', value: 'Correo'},
+                {text: 'Estado', value: 'Estado'},
+                {text: 'FirstCheck', value: 'CheckPass'},
+                
+
+            ]
+
         }
 
     },
@@ -198,6 +235,31 @@ export default {
              
                 });
         },
+        verInstituciones(){
+            const _this = this;
+            let config = {
+                headers: {
+                    "x-token": `${this.usuario.token}`,
+                },
+            };
+            axios.get(
+                    `${this.$store.state.URL}/api/institucion`,
+                    config
+                )
+                .then(res => {
+                this.AllUsers = res.data.AllUsers
+                console.log(this.AllUsers)
+                })
+                .catch(e => {
+                    _this.$swal({
+                        title: 'Error!',
+                        text: e.response.data.errors,
+                        icon: 'error'
+                    });
+             
+                });
+        },
+        
         limpiarDatos(){
         this.Nombres= '',
         this.PrimerApellido= '',
@@ -222,11 +284,12 @@ export default {
             
             }
 
-        }
+        },
 
     },
     mounted() {
-        this.userExist()
+        this.userExist(),
+        this.verInstituciones()
     }
 }
 

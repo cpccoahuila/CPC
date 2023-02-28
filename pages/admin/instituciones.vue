@@ -273,7 +273,7 @@
                                 <v-col cols="12">
                                     <v-text-field label="Causa/Motivo de los hechos" dense :counter="200" v-model="CausaMotivoHechos" :rules="notNullRule" required></v-text-field>
                                 </v-col>
-                                <v-col cols="12" md="6">
+                                <v-col cols="12" xl="3" md="5">
                                     <v-select label="Tipo del sanción" dense v-model="IdTipoSancion" :items="[
                                             { text: 'INHABILITADO', value: 'I' },
                                             { text: 'MULTADO', value: 'M' },
@@ -283,6 +283,9 @@
                                             { text: 'SANCIÓN ECONÓMICA', value: 'SE' },
                                             { text: 'OTRO', value: 'O' }                                            
                                         ]" required multiple chips :rules="notNullRule"></v-select>
+                                </v-col>
+                                <v-col cols="12" xl="9" md="7">
+                                    <v-text-field label="Decripción de la sanción" dense :counter="200" v-model="DescripcionSancion" :rules="notNullRule" required></v-text-field>
                                 </v-col>
                                 <v-col cols="12" md="6">
                                     <v-text-field label="Documento de la resolución (URL)" v-model="URLResolucion" :rules="notNullRule" dense required></v-text-field>
