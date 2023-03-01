@@ -75,7 +75,7 @@
                             pre-registro.
 
                         </p>
-                        <v-btn elevation="3" :color="page.color" dark href="#"> Regístro de instituciónes públicas</v-btn>
+                        <v-btn elevation="3" :color="page.color" dark href="https://docs.google.com/forms/d/e/1FAIpQLScKlik-KXfo5uvcO-5OMjcQBP0R4poGSWdG1lP6tquzxu6I_Q/viewform"> Regístro de instituciónes públicas</v-btn>
                     </v-card-text>
 
                 </v-card>
@@ -133,16 +133,21 @@
                    </v-col>
                     <v-row>
 
-                        <v-col cols="5" align="center"> <v-select  v-model="IdDependencia" @input="traerInstituciones" label="Seleccionar Dependencia" variant="solo" :items="[{'Dependencia': 'Todas', 'IdDependencia': ''}].concat(allDependencias)" item-text='Dependencia'
+                        <v-col cols="12" lg="5" align="center"> <v-select  v-model="IdDependencia" @input="traerInstituciones" label="Seleccionar Dependencia" variant="solo" :items="[{'Dependencia': 'Todas', 'IdDependencia': ''}].concat(allDependencias)" item-text='Dependencia'
                          item-value="IdDependencia"></v-select>
                         </v-col>
-                        <v-col cols="4" align="center"><v-select v-model="IdRamos" @input="traerInstituciones" label="Seleccionar Ramo" :items="itemsRamos"></v-select>
+                        <v-col cols="12" lg="4" align="center"><v-select v-model="IdRamos" @input="traerInstituciones" label="Seleccionar Ramo" :items="itemsRamos"></v-select>
                         </v-col>
-                        <v-col cols="3" align="center"><v-select v-model="EjercicioFiscal" @input="traerInstituciones" label="Seleccionar Ejercicio Fiscal" :items="itemsYears"></v-select>
+                        <v-col cols="12" lg="3"  align="center"><v-select v-model="EjercicioFiscal" @input="traerInstituciones" label="Seleccionar Ejercicio Fiscal" :items="itemsYears"></v-select>
                         </v-col>
                     </v-row>
                     
                     
+              
+                    
+
+                </v-card>
+                <v-card>
                     <v-card-title class="justify-center">
                         
                         <v-col cols="12" align="center">
@@ -154,13 +159,10 @@
                             hide-details></v-text-field>
                     </v-card-title>
                     <v-divider></v-divider>
-                    <v-card>
                         <v-data-table :headers="headers" :items="servidores" :search="search" :loading='loading'>
 
                         </v-data-table>
                     </v-card>
-
-                </v-card>
             </v-col>
         </v-row>
     </v-container>
@@ -185,12 +187,12 @@ export default {
             botones: [{
                 titulo: 'Bases Plataforma Nacional Digital',
                 icon: 'estandar de datos.png',
-                href: '#'
+                href: 'https://www.plataformadigitalnacional.org/especificaciones/s2'
             },
             {
                 titulo: 'Diccionario de datos',
                 icon: 'datos abiertos.png',
-                href: '#'
+                href: 'https://docs.google.com/spreadsheets/d/1fRhDfHtrBPYyR36zxpenXWind9FP1pLAQJOVS69QwUM/edit#gid=262781770'
             },
             {
                 titulo: 'Log-In-Instituciones',
@@ -253,7 +255,7 @@ export default {
 
             ],
             search: '',
-            loading: false,
+            loading: true,
             itemsRamos: [
                 {
                     text: 'Todos',
@@ -298,6 +300,7 @@ export default {
                 .then(res => {
                 
                     _this.servidores = res.data.ServidoresContrataciones
+                    this.loading = false
                    
                 })
                 .catch(e => {

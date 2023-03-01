@@ -101,10 +101,10 @@ export default {
 
         ...mapActions(['guardarUsuario']),
 
-        logIn() {
+        async logIn() {
             const _this = this;
             _this.loading = true;
-            axios.post(`${this.$store.state.URL}/api/auth/login`, {
+            await axios.post(`${this.$store.state.URL}/api/auth/login`, {
                 Correo: this.Correo,
                 Password: this.Password
             }).then(function (response) {
@@ -129,15 +129,14 @@ export default {
             }).finally(() => _this.loading = false);
         },
         userExist() {
-            
+              if (this.usuario.status != false && this.usuario.data.Role == 'USER-INSTITUCION' && this.usuario.data.CheckPass) {
+                this.$router.push({ path: '/admin/instituciones' }) 
+            }
             if (this.usuario.status != false && this.usuario.data.Role == 'ADMIN' && this.usuario.data.CheckPass) {
                 this.$router.push({ path: '/admin/superUser' })
             }
             
-            if (this.usuario.status != false && this.usuario.data.Role == 'USER-INSTITUCION' && this.usuario.data.CheckPass) {
-                this.$router.push({ path: '/admin/instituciones' }) 
-                
-            }
+          
             console.log('admin pass')
 
         },

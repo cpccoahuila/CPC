@@ -11,45 +11,52 @@
                 <v-layout class="" >
 
                     <v-row justify="center">
-                        <v-col cols="12" xl="3" lg="3" md="4" v-if="userContratos || userGeneral">
+                        <!-- <v-col cols="12" xl="3" lg="3" md="4" v-if="userContratos || userGeneral">
                             <v-btn block @click="nuevaInstitucion = false">
                                 <v-icon>mdi mdi-file-delimited-outline</v-icon>
 
                                 Carga masiva S-Contratos
                             </v-btn>
-                        </v-col>
+                        </v-col> -->
                         <v-col cols="12" xl="2" lg="3" md="4"  v-if="userContratos || userGeneral">
-                            <v-btn block @click="nuevaInstitucion = true; nuevoSancionado =false">
+                            <v-btn  block @click="nuevaInstitucion = true;verSancionados = false; verContratos = false; nuevoSancionado =false">
                                 <v-icon>mdi mdi-plus-circle-outline</v-icon>
                                 Nuevo S-Contratos
                             </v-btn>
                         </v-col>
 
-                        <v-col cols="12" xl="2" lg="3" md="4" v-if="userSancionados || userGeneral">
-                            <v-btn block @click="nuevaInstitucion = false; nuevoSancionado = true">
+                        <v-col   cols="12" xl="2" lg="3" md="4" v-if="userSancionados || userGeneral">
+                            <v-btn  block @click="nuevaInstitucion = false; verSancionados = false; verContratos = false; nuevoSancionado = true">
                                 <v-icon>mdi mdi-plus-circle-outline</v-icon>
                                 Nuevo Sancionado
                             </v-btn>
                         </v-col>
-                        <v-col cols="12" xl="2" lg="3" md="4" v-if="userContratos || userGeneral">
-                            <v-btn block @click="nuevaInstitucion = false">
+                        <v-col  cols="12" xl="2" lg="3" md="4" v-if="userContratos || userGeneral">
+                            <v-btn  block @click="nuevaInstitucion = false ; nuevoSancionado =false; verSancionados = false; verContratos = true">
                                 <v-icon>mdi mdi-eye-settings</v-icon>
 
-                                Ver Mis Servidores
+                                Ver Serv-Contratos
+                            </v-btn>
+                        </v-col>
+                        <v-col cols="12" xl="2" lg="3" md="4" v-if="userSancionados || userGeneral">
+                            <v-btn  block @click="nuevaInstitucion = false ; nuevoSancionado =false; verContratos = false; verSancionados = true">
+                                <v-icon>mdi mdi-eye-settings</v-icon>
+
+                                Ver Serv-Sancionados
                             </v-btn>
                         </v-col>
                         
 
 
                         <v-col cols="12" xl="2" lg="3" md="4" v-if="userSancionados">
-                            <v-btn block @click="nuevaInstitucion = false">
+                            <v-btn  block @click="nuevaInstitucion = false">
                                 <v-icon>mdi mdi-eye-settings</v-icon>
 
                                 Ver Sancionados
                             </v-btn>
                         </v-col> 
                         <v-col cols="12" xl="2" lg="2" md="4">
-                            <v-btn block @click="cerrarSesion">
+                            <v-btn dark block @click="cerrarSesion">
                                 <v-icon>mdi mdi-logout</v-icon>
 
                                 Cerrar Sesión
@@ -388,7 +395,55 @@
 
             </v-col>
 
+            <v-col cols="12"  v-if="verSancionados">
+                <template>
+                         <v-card-title>
+                 <v-text-field
+                     v-model="search"
+                     append-icon="mdi-magnify"
+                     label="Buscar"
+                     single-line
+                     hide-details
+                 ></v-text-field>
+                 </v-card-title>
+                 <v-data-table
+                     dense
+                     :search="search"
+                     :headers="sancionadosColumnas"
+                     :items="allSancionados"
+                     item-key="IdServidorPubSancionado"
+                     class="elevation-1"
+                 ></v-data-table>
+                 </template>
+            </v-col>
+            <v-col cols="12" v-if="verContratos">
+                     
+                     <template>
+                         <v-card-title>
+                 <v-text-field
+                     v-model="search2"
+                     append-icon="mdi-magnify"
+                     label="Buscar"
+                     single-line
+                     hide-details
+                 ></v-text-field>
+                 </v-card-title>
+                 <v-data-table
+                     dense
+                     :search="search2"
+                     :headers="nombresColumnas"
+                     :items="AllUsers"
+                     item-key="IdServidorEnContrataciones"
+                     class="elevation-1"
+                 ></v-data-table>
+                 </template>
+ 
+                
+             </v-col>
+   
+
         </v-row>
+   
 
     </v-container>
 
@@ -414,6 +469,8 @@ export default {
             menuFechaResolucion: false,
             nuevaInstitucion: false,
             nuevoSancionado: false,
+            verSancionados: false,
+            verContratos: false,
             hidden: true,
             valid: false,
             loading: false,
@@ -485,6 +542,89 @@ export default {
             userGeneral: false,
             userSancionados: false,
             userContratos: false,
+            AllUsers: [],
+            allSancionados: [],
+            search: '',
+            search2: '',
+            nombresColumnas: [
+            {
+                text: 'Nombre',
+                value: 'DatosServidor.Nombres',
+                sortable: true,
+                align: 'start',
+            },
+            {
+                text: 'Primer Apellido',
+                value: 'DatosServidor.PrimerApellido',
+            },
+            {
+                text: 'Segundo Apellido',
+                value: 'DatosServidor.SegundoApellido',
+            },
+            {
+                text: 'Dependencia',
+                value: 'Dependencium.Dependencia',
+            },
+            {
+                text: 'Puesto',
+                value: 'DatosServidor.Puesto.Puesto',
+            },
+
+            {
+                text: 'Responsabilidad',
+                value: 'NivelesResponsabilidad',
+            },
+            {
+                text: 'Tipo de contrataciónes',
+                value: 'TipoProcedimiento',
+            },
+            {
+                text: 'Ejercicio Fiscal',
+                value: 'EjercicioFiscal',
+            },
+            {
+                text: 'Ramo',
+                value: 'Ramo.Ramo',
+            },
+
+            ],
+            sancionadosColumnas: [
+            {
+                text: 'Nombre',
+                value: 'DatosServidor.Nombres',
+                sortable: true,
+                align: 'start',
+            },
+            {
+                text: 'Primer Apellido',
+                value: 'DatosServidor.PrimerApellido',
+            },
+            {
+                text: 'Segundo Apellido',
+                value: 'DatosServidor.SegundoApellido',
+            },
+            {
+                text: 'Dependencia',
+                value: 'Dependencia.Dependencia',
+            },
+            {
+                text: 'Expediente',
+                value: 'Expediente',
+            },
+            {
+                text: 'Falta',
+                value: 'Falta.TipoFalta',
+            },
+            {
+                text: 'Autoridad Sancionadora',
+                value: 'AutoridadSancionadora',
+            },
+            {
+                text: 'Observaciones',
+                value: 'Observaciones',
+            },
+            ]
+
 
         }
 
@@ -672,7 +812,6 @@ export default {
 
                 });
         },
-
         userExist() { 
             
             if (!this.usuario.data) {
@@ -704,11 +843,61 @@ export default {
            
             
 
+        },
+        traerServidores() {
+            const _this = this;
+            let config = {
+                headers: {
+                    "x-token": `${this.usuario.token}`,
+                },
+            };
+            axios.get(
+                    `${this.$store.state.URL}/api/servidores/institucion`,
+                    config
+                )
+                .then(res => {
+                this.AllUsers = res.data.ServidoresContrataciones
+                console.log(this.AllUsers)
+                })
+                .catch(e => {
+                    _this.$swal({
+                        title: 'Error!',
+                        text: e.response.data.errors,
+                        icon: 'error'
+                    });
+             
+                });
+        },
+        traerSancionados() {
+            const _this = this;
+            let config = {
+                headers: {
+                    "x-token": `${this.usuario.token}`,
+                },
+            };
+            axios.get(
+                    `${this.$store.state.URL}/api/sanciones/misSancionados`,
+                    config
+                )
+                .then(res => {
+                this.allSancionados = res.data.Sancionados
+                console.log(this.allSancionados)
+                })
+                .catch(e => {
+                    _this.$swal({
+                        title: 'Error!',
+                        text: e.response.data.errors,
+                        icon: 'error'
+                    });
+             
+                });
         }
 
     },
     mounted() {
         this.userExist()
+        this.traerServidores()
+        this.traerSancionados()
     }
 }
 </script>
