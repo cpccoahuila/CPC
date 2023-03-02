@@ -81,7 +81,7 @@ export default {
           secc.push({ id: sec.id, ...sec.data(), documentos: docs })
         })
         this.Data = { id: modulo.docs[0].id, ...modulo.docs[0].data(), secciones: secc }
-        console.log(this.Data)
+        
       } catch (error) {
         throw new Error(error.message)
       }
