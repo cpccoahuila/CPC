@@ -56,6 +56,7 @@ export default {
   ],
   // MIDDLEWARES
   firebase: {
+    
     config: {
       apiKey: "AIzaSyDIS5dpFmXD6qjmH51HrQ_UMmKWtRvKKxc",
       authDomain: "transparenciaseac.firebaseapp.com",
@@ -67,7 +68,27 @@ export default {
   services: {
     auth: true, // Just as example. Can be any other service.
     firestore: true
-  }
+  },
+
+  },
+  hooks: {
+    generate: {
+      async done(builder) {
+        const appModule = await import('./.nuxt/firebase/app.js')
+        const { session } = await appModule.default(
+          builder.options.firebase.config,
+          {
+            res: null,
+          }
+        )
+        try {
+          session.database().goOffline()
+        } catch (e) { }
+        try {
+          session.firestore().terminate()
+        } catch (e) { }
+      },
+    },
   },
 
 
