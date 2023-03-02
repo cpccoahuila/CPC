@@ -32,6 +32,7 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     { src: '~/plugins/vuex-persist', ssr: false }
+    
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -49,9 +50,25 @@ export default {
     '@nuxtjs/axios',
     'vue-sweetalert2/nuxt',
     '@nuxtjs/universal-storage',
+    '@nuxtjs/firebase',
+    
+    
   ],
   // MIDDLEWARES
-
+  firebase: {
+    config: {
+      apiKey: "AIzaSyDIS5dpFmXD6qjmH51HrQ_UMmKWtRvKKxc",
+      authDomain: "transparenciaseac.firebaseapp.com",
+      projectId: "transparenciaseac",
+      storageBucket: "transparenciaseac.appspot.com",
+      messagingSenderId: "640440931494",
+      appId: "1:640440931494:web:81e2d4d8a42d3422a0d067"
+  },
+  services: {
+    auth: true, // Just as example. Can be any other service.
+    firestore: true
+  }
+  },
 
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -110,7 +127,7 @@ export default {
       const assetsLoader = config.module.rules.find(rule => rule.test.test('.png'));
 
       // Overwrite the test regex and add `pdf`
-      assetsLoader.test = /\.(png|jpe?g|gif|svg|webp|pdf)$/i;
+      assetsLoader.test = /\.(png|jpe?g|gif|svg|webp|pdf|xlsx)$/i;
 
       return config;
     },

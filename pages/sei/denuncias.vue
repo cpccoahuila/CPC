@@ -67,58 +67,8 @@
                                 instituciones. Donde se pretende brindar atención mediante la captación, registro y emisión de las solicitudes de los ciudadanos, con la finalidad de emitir una resolución correspondiente a cada caso y en base de la legislación aplicable a cada institución.</p>
 
                         </v-card-text>
-                        <v-divider class="ma-8"></v-divider>
-                        <v-card-text align="center" class="pa-6">
-
-                            <p class="text-h5">Formato para incorporar el sistema estatal de denuncias en las entidades públicas del Estado</p>
-
-                            <p class="text-justify">
-                                Con la finalidad de establecer un canal directo es necesaria la integración de el sistema de denuncias con cada institución, por ello cualquier intitución por medio de un servidor públicos
-                                en cualquera de las áreas involucradas, como órganos de control interno, titulares de área, directivos, administrativos, recursos humanos, cabildos podrán acceder y llevar a cabo
-                                el registro y seguimiento de las denuncias de su plataforma dentro de la institución.
-                            </p>
-                            <p>Para instituciónes públicas del estado de Coahuila interesadas en incorporar el sistema estatal de denuncias le invitamos a llenar este formato.
-
-                            </p>
-                            <v-btn elevation="3" :color="page.color" dark href="#"> Regístro de instituciónes públicas</v-btn>
-                        </v-card-text>
-
-                    </v-card>
-                </v-col>
-            </v-row>
-            <v-card class="mt-10 pa-5">
-
-                <v-card-title class="justify-center mb-4">
-                    <v-icon x-large :color="page.color">mdi-email-edit-outline</v-icon><div class=" text-xl-h3 text-md-h4"> Buzones de quejas</div>
-                </v-card-title>
-            <v-divider></v-divider>
-                <v-col align="center" justify="center">
-                    <v-row>
-                        <v-col cols="12" md="4" sm="6" v-for="(e,i) in botonesSec" :key="i">
-                            <v-card color="bluegreyt" :href="e.to">
-
-                                <v-card-actions class="justify-center">
-
-                                    <v-img contain max-width="80" min-height="80" class="mr-4" v-if=" e.logo" :src="require('@/pages/sei/icons/' + e.icon)" alt="alt"></v-img>
-
-                                    <div v-if=" !e.logo">
-                                        <v-avatar size="50" color="" tile>
-
-                                            <img :src="require('@/static/img/' + e.icon)" alt="alt">
-                                        </v-avatar>
-                                    </div>{{ e.titulo }}
-                                </v-card-actions>
-
-                            </v-card>
-                        </v-col>
-
-                    </v-row>
-
-                </v-col>
-
-            </v-card>
-
-            <v-card class="mt-3 mb-3" color="peac">
+                        <v-divider class=""></v-divider>
+                      
                 <v-col align="center" justify="center">
                     <v-row justify="center" align="center" class="mt-5">
 
@@ -158,7 +108,99 @@
                     </v-row>
                 </v-col>
 
+                <v-divider class=""></v-divider>
+                        <v-card-text align="center" class="pa-6">
+
+                            <p class="text-h5">Formato para incorporar el sistema estatal de denuncias en las entidades públicas del Estado</p>
+
+                            <p class="text-justify">
+                                Con la finalidad de establecer un canal directo es necesaria la integración de el sistema de denuncias con cada institución, por ello cualquier intitución por medio de un servidor públicos
+                                en cualquera de las áreas involucradas, como órganos de control interno, titulares de área, directivos, administrativos, recursos humanos, cabildos podrán acceder y llevar a cabo
+                                el registro y seguimiento de las denuncias de su plataforma dentro de la institución.
+                            </p>
+                            <p>Para instituciónes públicas del estado de Coahuila interesadas en incorporar el sistema estatal de denuncias le invitamos a llenar este formato.
+
+                            </p>
+                            <v-btn elevation="3" :color="page.color" dark href="https://docs.google.com/forms/d/e/1FAIpQLScKlik-KXfo5uvcO-5OMjcQBP0R4poGSWdG1lP6tquzxu6I_Q/viewform"> Regístro de instituciónes públicas</v-btn>
+                        </v-card-text>
+
+                    </v-card>
+                </v-col>
+            </v-row>
+            
+            <v-card class="mt-10 pa-5">
+
+                <v-card-title class="justify-center mb-4">
+                    <v-icon x-large :color="page.color">mdi-email-edit-outline</v-icon><div class=" text-xl-h3 text-md-h4"> Buzones de quejas</div>
+                </v-card-title>
+            <v-divider></v-divider>
+                <v-col align="center" justify="center">
+                    <v-row>
+                        <v-col cols="12" md="4" sm="6" v-for="(e,i) in botonesSec" :key="i">
+                            <v-card color="bluegreyt" :href="e.to">
+
+                                <v-card-actions class="justify-center">
+
+                                    <v-img contain max-width="80" min-height="80" class="mr-4" v-if=" e.logo" :src="require('@/pages/sei/icons/' + e.icon)" alt="alt"></v-img>
+
+                                    <div v-if=" !e.logo">
+                                        <v-avatar size="50" color="" tile>
+
+                                            <img :src="require('@/static/img/' + e.icon)" alt="alt">
+                                        </v-avatar>
+                                    </div>{{ e.titulo }}
+                                </v-card-actions>
+
+                            </v-card>
+                        </v-col>
+
+                    </v-row>
+
+                </v-col>
+
             </v-card>
+
+            <!-- <v-card class="mt-3 mb-3" color="peac">
+                <v-col align="center" justify="center">
+                    <v-row justify="center" align="center" class="mt-5">
+
+                        <v-col cols="12" lg="8" sm="12" v-for="(e,i) in btnitem" :key="i">
+
+                            <v-card class="pa-2 mb-10 mx-auto text-justify" tile color="article">
+                                <v-row align="center">
+                                    <v-col cols="12" lg="6" sm="12" class="pa-8" align="center" justify="center">
+
+                                        <h3> {{e.title}}</h3>
+                                        <v-card-subtitle class="text-justify">
+                                            {{e.desc}}
+                                        </v-card-subtitle>
+                                        <v-card-subtitle class="text-justify">
+                                            {{e.desc2}}
+                                        </v-card-subtitle>
+                                    </v-col>
+
+                                    <v-col cols="12" lg="6" sm="12">
+
+                                        <v-hover>
+
+                                            <v-img slot-scope="{ hover }" v-if="hover" :src="require('@/static/img/botonera/'+ e.src1)">
+                                            </v-img>
+                                            <v-img v-else :src="require('@/static/img/botonera/'+ e.src1)">
+                                            </v-img>
+
+                                        </v-hover>
+
+                                    </v-col>
+
+                                </v-row>
+                            </v-card>
+
+                        </v-col>
+
+                    </v-row>
+                </v-col>
+
+            </v-card> -->
 
             <!-- Inicio debotoneras denuncia -->
 

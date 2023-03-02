@@ -173,22 +173,7 @@
 
             // Termina page
 
-            acuerdos: [{
-                    year: '2021-2022',
-                    src: ''
-                },
-                {
-                    year: '2020-2021',
-                    src: ''
-                },
-                {
-                    year: '2019-2020',
-                    src: ''
-                },
-                {
-                    year: '2018-2019',
-                    src: ''
-                },
+            acuerdos: [
 
             ],
             integrantes: [

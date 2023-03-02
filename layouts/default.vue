@@ -66,21 +66,29 @@
       >
       <v-avatar size="25"> <img  src="@/static/img/sea-icon.png" alt="Icono Sea"/></v-avatar>  
       </v-btn> {{ title }} </v-toolbar-title>
-      
+     
       <v-spacer />
+      
       <v-btn v-for="(icon,i) in icons" :href="icon.to" :key="i" class="mx-4 white--text" icon>
                 <v-icon size="24px">
                     {{ icon.icon }}
                 </v-icon>
             </v-btn>
+            <v-btn v-if="$store.state.usuario.status" @click="cerrarSesion" class="mx-4 white--text" icon>
+                <v-icon size="24px">
+                  mdi mdi-logout
+                </v-icon>Log-Out
+            </v-btn>
       <v-switch
         class="mt-4 ml-8" 
         v-model="$vuetify.theme.dark"
         inset
-        label="Modo Obscuro"
+        label="M-Obscuro"
         persistent-hint
         
       ></v-switch>
+     
+  
     
     </v-app-bar>
     
@@ -105,11 +113,12 @@
 <script>
 import lineUp from '@/components/LineUp'
 import footerN from '@/components/Footer'
-import {mapActions} from 'vuex'
+import {mapActions, mapstate} from 'vuex'
 
 
 export default {
   name: 'DefaultLayout',
+  
   components: {
     footerN,
     lineUp
@@ -144,6 +153,7 @@ export default {
           title: 'Sistema Estatal de Información',
           to: '/sei'
         },
+       
         {
           avatar: 'azimutlog.png',
           title: 'Revista Azimut',
@@ -181,8 +191,16 @@ export default {
         {
           icon: 'mdi-card-account-phone-outline',
           title: 'Contacto',
-          to: '/contacto'
+          to: '/contacto',
+          color: 'cyan darken-3'
         },
+        {
+          icon: 'mdi-badge-account',
+          title: 'Log-in Instituciónes',
+          to: '/admin',
+          color: ''
+        },
+      
       ],
       miniVariant: true,
       right: true,
@@ -205,7 +223,7 @@ export default {
     }
   },
   methods:{
-    ...mapActions(['readUserLocalStorage'])
+    ...mapActions(['readUserLocalStorage', 'cerrarSesion'])
   },
   created(){
     

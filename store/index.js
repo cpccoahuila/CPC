@@ -57,7 +57,7 @@ export const mutations = {
       cerrarSesion({commit}){
         commit("LOG_OUT");
         localStorage.removeItem('usuario')
-        localStorage.removeItem('store')  
+        localStorage.removeItem('Store')  
         $nuxt.$router.push('/')
       }
 }

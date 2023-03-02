@@ -44,7 +44,7 @@
                         </v-card-actions>
                         <v-card-actions class="justify-center">
                             <v-chip-group column>
-                                <v-chip v-for="(e,i) in art20" :key="i" label outlined color="info" max-width="100%" :href="require('@/pages/transparencia/art20/' + e.src)" download>{{ e.año }}</v-chip>
+                                <v-chip v-for="(e,i) in art20" :key="i" label outlined color="info" max-width="100%" :to="('transparencia/' + e.to)" download>{{ e.año }}</v-chip>
                             </v-chip-group>
                         </v-card-actions>
 
@@ -72,7 +72,7 @@
                             <v-col cols="12" md="4" v-for="(fraccion, i) in fracciones" :key="i">
                                 <v-list color="bluegreyt">
 
-                                    <v-list-item class="justify-center" align="center" :to="'transparencia/art21fracc'+fraccion.to" router exact>
+                                    <v-list-item class="justify-center" align="center" :to="'transparencia/'+fraccion.to" router exact>
                                         <v-row>
                                             <v-col cols="12">
                                                 <v-btn icon class="text-h4">{{i +1}}</v-btn>
@@ -102,7 +102,7 @@
                             <v-col cols="12" md="4">
                                 <v-list color="bluegreyt">
 
-                                    <v-list-item  to="#" router exact>
+                                    <v-list-item  to="/transparencia/22-1" router exact>
                                         <v-row >
 
                                            <v-icon large>mdi-cash</v-icon> <v-col> Gastos de publicidad</v-col>
@@ -129,21 +129,21 @@
                             <v-col cols="12" md="">
                                 <v-list color="bluegreyt" two-line>
 
-                                    <v-list-item  to="#" router exact>
+                                    <v-list-item  to="/transparencia/25-1" router exact>
                                         <v-row>
 
                                            <v-icon large >mdi-border-color</v-icon> <v-col > Los reglamentos de las leyes expedidos en ejercicio de sus atribuciones.</v-col>
                                         </v-row>
 
                                     </v-list-item>
-                                    <v-list-item  to="#" router exact>
+                                    <v-list-item  to="/transparencia/25-2" router exact>
                                         <v-row >
 
                                             <v-icon large > mdi-file-link-outline</v-icon><v-col >Las iniciativas de leyes o decretos y demás disposiciones generales o particulares en materia administrativa.</v-col>
                                         </v-row>
 
                                     </v-list-item>
-                                    <v-list-item to="#" router exact>
+                                    <v-list-item to="/transparencia/25-3" router exact>
                                         <v-row >
                                            <v-icon large >mdi-cog-counterclockwise</v-icon> <v-col > Los convenios de coordinación con la Federación, Estados y Municipios y de concertación con los sectores social y privado, señalando el objeto, las partes y tiempo de duración.</v-col>
 
@@ -155,7 +155,8 @@
                             </v-col>
                         </v-row>
                     </v-col>
-                    </v-row><v-row>
+                    </v-row>
+                    <v-row justify="center" align="center">
                     <v-col align="center" justify="center" cols="4">
 
                         <v-card-title class="justify-center">
@@ -166,7 +167,7 @@
                             <v-col cols="12" md="4">
                                 <v-list color="bluegreyt">
 
-                                    <v-list-item  to="#" router exact>
+                                    <v-list-item  to="/transparencia/70-1" router exact>
                                         <v-row >
 
                                             <v-icon large >mdi-table-cog</v-icon> <v-col > Tabla de aplicabilidad</v-col>
@@ -175,10 +176,72 @@
 
                                     </v-list-item>
 
-                                    <v-list-item  to="#" router exact>
+                                    <v-list-item  to="/transparencia/70-2" router exact>
                                         <v-row >
 
                                             <v-icon large >mdi-table-cog</v-icon> <v-col > Tabla de Acttualización y Conservación</v-col>
+                                        </v-row>
+                    
+                                    </v-list-item>
+
+                                </v-list>
+                            </v-col>
+                        </v-row>
+                    </v-col>
+
+                </v-row>
+                <v-row justify="center" align="center">
+                    <v-col align="center" justify="center" cols="4">
+
+                        <v-card-title class="justify-center">
+                            <div class=" text-xl-h4 text-md-h6">Transparencia LGCG</div>
+                        </v-card-title>
+                        </v-col> <v-divider vertical></v-divider><v-col>
+                        <v-row>
+                            <v-col cols="12" md="4">
+                                <v-list color="bluegreyt">
+
+                                    <v-list-item  to="/transparencia/LGCG-1" router exact>
+                                        <v-row >
+
+                                            <v-icon large >mdi mdi-folder-file-outline</v-icon> <v-col > I. Información Contable</v-col>
+
+                                        </v-row>
+
+                                    </v-list-item>
+
+                                    <v-list-item  to="/transparencia/LGCG-2" router exact>
+                                        <v-row >
+
+                                            <v-icon large >mdi mdi-folder-file-outline</v-icon> <v-col > II. Información Presupuestal</v-col>
+                                        </v-row>
+                    
+                                    </v-list-item>
+                                    <v-list-item  to="/transparencia/LGCG-3" router exact>
+                                        <v-row >
+                                            
+                                            <v-icon large >mdi mdi-folder-file-outline</v-icon> <v-col > III. Información Programática</v-col>
+                                        </v-row>
+                                        
+                                    </v-list-item>
+                                    <v-list-item  to="/transparencia/LGCG-4" router exact>
+                                        <v-row >
+                                            
+                                            <v-icon large >mdi mdi-folder-file-outline</v-icon> <v-col > IV. Información Adicional</v-col>
+                                        </v-row>
+                                        
+                                    </v-list-item>
+                                    <v-list-item  to="/transparencia/LGCG-5" router exact>
+                                        <v-row >
+
+                                            <v-icon large >mdi mdi-folder-file-outline</v-icon> <v-col >V. Ley de Disciplina Financiera (LDF)</v-col>
+                                        </v-row>
+                    
+                                    </v-list-item>
+                                    <v-list-item  to="/transparencia/LGCG-6" router exact>
+                                        <v-row >
+
+                                            <v-icon large >mdi mdi-folder-file-outline</v-icon> <v-col > Título Quinto de la LGCG</v-col>
                                         </v-row>
                     
                                     </v-list-item>
@@ -209,296 +272,277 @@ export default {
             },
 
             art20: [{
-                    año: '2023',
-                    src: 'calendario-ipo-sea-coahuila-2023.pdf',
+                    año: 'Calendario de información pública de oficio',
+                    to: '20-1',
 
                 },
-                {
-                    año: '2022',
-                    src: 'calendario-ipo-sea-coahuila-2022.pdf',
-                },
-                {
-                    año: '2021',
-                    src: 'calendario-ipo-sea-coahuila-2021.pdf',
-                },
-                {
-                    año: '2020',
-                    src: 'calendario-ipo-sea-coahuila-2020.pdf',
-                },
-                {
-                    año: '2019',
-                    src: 'calendario-ipo-sea-coahuila-2019.pdf',
-                },
-                {
-                    año: '2018',
-                    src: 'calendario-ipo-sea-coahuila-2018.pdf',
-                },
+               
             ],
 
             fracciones: [{
                     titulo: 'Estructura Orgánica',
-                    to: '1',
+                    to: '21-1',
                     icon: 'mdi-sitemap'
                 },
                 {
                     titulo: 'Marco normativo',
-                    to: '/',
+                    to: '21-2',
                     icon: 'mdi-scale-balance'
                 },
                 {
                     titulo: 'Directorio de los servidores públicos',
-                    to: '/',
+                    to: '21-3',
                     icon: 'mdi-card-account-details-outline'
                 },
                 {
                     titulo: 'Nombramientos, comisiones y licencias',
-                    to: '/',
+                    to: '21-4',
                     icon: 'mdi-folder-account-outline'
                 },
                 {
                     titulo: 'Remuneración mensual',
-                    to: '/',
+                    to: '21-5',
                     icon: 'mdi-account-credit-card'
                 },
                 {
                     titulo: 'Declaración Patrimonial',
-                    to: '/',
+                    to: '21-6',
                     icon: ' mdi-account-search'
                 },
                 {
                     titulo: 'Viáticos y gastos de representación',
-                    to: '/',
+                    to: '21-7',
                     icon: 'mdi-plane-car'
                 },
                 {
                     titulo: 'Perfil de puestos y currículum',
-                    to: '/',
+                    to: '21-8',
                     icon: 'mdi-badge-account-outline'
                 },
                 {
                     titulo: 'Convenios de colaboración',
-                    to: '/',
+                    to: '21-9',
                     icon: ' mdi-file-sign'
                 },
                 {
                     titulo: 'Condiciones generales de trabajo',
-                    to: '/',
+                    to: '21-10',
                     icon: 'mdi-briefcase-outline'
                 },
                 {
                     titulo: 'Planes, programas o proyectos',
-                    to: '/',
+                    to: '21-11',
                     icon: 'mdi-chart-donut-variant'
                 },
                 {
                     titulo: 'Servicios y trámites',
-                    to: '/',
+                    to: '21-12',
                     icon: 'mdi-face-agent'
                 },
                 {
                     titulo: 'Mecanismos de solicitudes, opiniones, quejas',
-                    to: '/',
+                    to: '21-13',
                     icon: 'mdi-account-tie-voice-outline'
                 },
                 {
                     titulo: 'Mecanismos de participación ciudadana',
-                    to: '/',
+                    to: '21-14',
                     icon: 'mdi-account-group-outline'
                 },
                 {
                     titulo: 'Estímulos, apoyos y requisitos',
-                    to: '/',
+                    to: '21-15',
                     icon: 'mdi-smoke-detector-outline'
                 },
                 {
                     titulo: 'Beneficiarios de subsidios, estímulos y apoyos',
-                    to: '/',
+                    to: '21-16',
                     icon: 'mdi-smoke-detector-outline'
                 },
                 {
                     titulo: 'Beneficiarios de programas sociales',
-                    to: '/',
+                    to: '21-17',
                     icon: 'mdi-home-group'
                 },
                 {
                     titulo: 'Personas que utilizan recursos públicos',
-                    to: '/',
+                    to: '21-18',
                     icon: 'mdi-account-cash'
                 },
                 {
                     titulo: 'Instituciones de beneficencia',
-                    to: '/',
+                    to: '21-19',
                     icon: 'mdi-bank-outline'
                 },
                 {
                     titulo: 'Presupuesto asignado',
-                    to: '/',
+                    to: '21-20',
                     icon: 'mdi-cash-check'
                 },
                 {
                     titulo: 'Calendario de reuniones públicas',
-                    to: '/',
+                    to: '21-21',
                     icon: 'mdi-laptop-account'
                 },
                 {
                     titulo: 'Unidad de transparencia y comité de transparencia',
-                    to: '/',
+                    to: '21-22',
                     icon: 'mdi-card-search-outline'
                 },
                 {
                     titulo: 'Catálogos documentales de archivos',
-                    to: '/',
+                    to: '21-23',
                     icon: 'mdi-archive'
                 },
                 {
                     titulo: 'Solicitudes y respuestas',
-                    to: '/',
+                    to: '21-24',
                     icon: 'mdi-folder-information-outline'
                 },
                 {
                     titulo: 'Informes financieros y cuenta pública',
-                    to: '/',
+                    to: '21-25',
                     icon: 'mdi-finance'
                 },
                 {
                     titulo: 'Deuda pública',
-                    to: '/',
+                    to: '21-26',
                     icon: 'mdi-chart-sankey'
                 },
                 {
                     titulo: 'Auditorías',
-                    to: '/',
+                    to: '21-27',
                     icon: 'mdi-folder-eye-outline'
                 },
                 {
                     titulo: 'Proveedores y contratistas',
-                    to: '/',
+                    to: '21.28',
                     icon: 'mdi-account-tie-woman'
                 },
                 {
                     titulo: 'Inspectores o visitadores',
-                    to: '/',
+                    to: '21-29',
                     icon: 'mdi-account-tie-outline'
                 },
                 {
                     titulo: 'Procedimientos de adjudicación directa, invitación restringida y licitación',
-                    to: '/',
+                    to: '21-30',
                     icon: 'mdi-folder-key-outline'
                 },
                 {
                     titulo: 'Agenda de eventos culturales o deportivos',
-                    to: '/',
+                    to: '21-31',
                     icon: 'mdi-view-agenda-outline'
                 },
                 {
                     titulo: 'Actas de entrega-recepción',
-                    to: '/',
+                    to: '21-32',
                     icon: 'mdi-file-document-outline'
                 },
 
                 {
                     titulo: 'Georreferenciación de obras públicas',
-                    to: '/',
+                    to: '21-33',
                     icon: 'mdi-map-marker-question'
                 },
                 {
                     titulo: 'Expedientes reservados',
-                    to: '/',
+                    to: '21-34',
                     icon: 'mdi-archive-alert-outline'
                 },
                 {
                     titulo: 'Guía de archivos',
-                    to: '/',
+                    to: '21-35',
                     icon: 'mdi-archive-outline'
                 },
                 {
                     titulo: 'Concesiones, permisos y autorizaciones',
-                    to: '/',
+                    to: '21-36',
                     icon: 'mdi-account-clock-outline'
                 },
                 {
                     titulo: 'Concesiones de transporte público',
-                    to: '/',
+                    to: '21-37',
                     icon: 'mdi-bus'
                 },
                 {
                     titulo: 'Entrega de recursos públicos',
-                    to: '/',
+                    to: '21-38',
                     icon: 'mdi-handshake-outline'
                 },
                 {
                     titulo: 'Sistemas pensionarios',
-                    to: '/',
+                    to: '21-39',
                     icon: 'mdi-folder-file-outline'
                 },
                 {
                     titulo: 'Informe de actividades',
-                    to: '/',
+                    to: '21-40',
                     icon: ' mdi-office-building-cog-outline'
                 },
                 {
                     titulo: 'Ingresos',
-                    to: '/',
+                    to: '21-41',
                     icon: 'mdi-account-cash-outline'
                 },
                 {
                     titulo: 'Información desclasificada',
-                    to: '/',
+                    to: '21-42',
                     icon: 'mdi-text-box-outline'
                 },
                 {
                     titulo: 'Preguntas frecuentes',
-                    to: '/',
+                    to: '21-43',
                     icon: 'mdi-chat-question-outline'
                 },
                 {
                     titulo: 'Catálogo de información adicional',
-                    to: '/',
+                    to: '21-44',
                     icon: 'mdi-information-outline'
                 },
                 {
                     titulo: 'Acciones realizadas por contingencias',
-                    to: '/',
+                    to: '21-45',
                     icon: 'mdi-weather-pouring'
                 },
                 {
                     titulo: 'Aportaciones nacionales o internacionales, para emergencia o desastre',
-                    to: '/',
+                    to: '21-46',
                     icon: 'mdi-hand-coin-outline'
                 },
                 {
                     titulo: 'Servidores públicos con sanciones definitivas',
-                    to: '/',
+                    to: '21-47',
                     icon: 'mdi-account-multiple-remove'
                 },
                 {
                     titulo: 'Información catastral',
-                    to: '/',
+                    to: '21-48',
                     icon: 'mdi-domain'
                 },
                 {
                     titulo: 'Listado del parque vehicular',
-                    to: '/',
+                    to: '21-49',
                     icon: 'mdi-car-hatchback'
                 },
                 {
                     titulo: 'Proceso catastral de valuación',
-                    to: '/',
+                    to: '21-50',
                     icon: 'mdi-office-building'
                 },
                 {
                     titulo: 'Mecanismos y resultados de evaluación',
-                    to: '/',
+                    to: '21-51',
                     icon: 'mdi-home-analytics'
                 },
                 {
                     titulo: 'Resultados de evaluación',
-                    to: '/',
+                    to: '21-52',
                     icon: 'mdi-table-large'
                 },
                 {
                     titulo: 'Otra información',
-                    to: '/',
+                    to: '21-53',
                     icon: 'mdi-information-variant'
                 }
             ],

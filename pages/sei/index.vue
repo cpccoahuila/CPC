@@ -6,7 +6,7 @@
             <v-alert :color="page.color" class="mx-auto text-justify" border="top" colored-border elevation="2" :icon="page.icon" prominent>
 
                 <div align="center" class="mb-5 text-xl-h1 text-md-h3 ">{{page.title}}</div>
-                <div class="text-caption">(VERSIÓN BETA)</div>
+                <div class="text-caption">(V-1.2.0)</div>
 
             </v-alert>
 
@@ -15,7 +15,7 @@
                 <v-col align="center" justify="center">
                     <v-row>
                         <v-col cols="12" md="4" xs="12" v-for="(e,i) in botones" :key="i">
-                            <v-card color="bluegreyt" href="#">
+                            <v-card color="bluegreyt" :href="require('@/static/sei/' + e.doc)">
 
                                 <v-card-actions class="justify-center">
                                     <v-avatar size="35" tile>
@@ -104,20 +104,20 @@ export default {
                 icon: 'mdi-graphql'
             },
             botones: [{
-                    titulo: 'Proyecto Ejecutivo',
+                    titulo: 'Proyecto',
                     icon: 'proyecto.png',
-                    doc: ''
+                    doc: 'Proyecto Ejecutivo.pdf'
                 },
-                {
-                    titulo: 'Estandarización de datos',
-                    icon: 'estandar de datos.png',
-                    doc: ''
-                },
-                {
-                    titulo: 'Datos',
-                    icon: 'datos abiertos.png',
-                    doc: ''
-                },
+                // {
+                //     titulo: 'Estandarización de datos',
+                //     icon: 'estandar de datos.png',
+                //     doc: ''
+                // },
+                // {
+                //     titulo: 'Datos',
+                //     icon: 'datos abiertos.png',
+                //     doc: ''
+                // },
 
             ],
             sistemas: [{

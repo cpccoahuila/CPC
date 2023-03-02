@@ -189,10 +189,10 @@
                     <v-col align="center" justify="center" cols="12">
 
                         <v-card-title class="justify-center">
-                            <div class=" text-xl-h3 text-md-h4"> Plan de Comunicación</div>
+                            <div class=" text-xl-h3 text-md-h4"> Planes</div>
                         </v-card-title>
                         <v-card-actions class="justify-center">
-                            <v-btn href="https://www.cpccoahuila.org.mx/planes/planes/plan-de-comunicacion-cpc.pdf">Descargar</v-btn>
+                            <v-btn v-for=" (e,i) in planes" :key="i" :href="require('@/static/cpc/' + e.src)">{{ e.year }}</v-btn>
 
                         </v-card-actions>
 
@@ -207,7 +207,7 @@
                         <v-card-actions class="justify-center">
                             <!-- :href="require('@/pages/transparencia/art20/' + e.src)" -->
                             <v-row justify="center">
-                                <v-btn class="ma-2" v-for="(e,index) in informes" :key="index" label color="" max-width="100%" :href="e.src">{{ e.year }}</v-btn>
+                                <v-btn class="ma-2"  v-for="(e,i) in informes" :key="i"  :href="require('@/static/cpc/' + e.src)" label color="" max-width="100%">{{ e.year }}</v-btn>
                             </v-row>
                         </v-card-actions>
 
@@ -250,19 +250,37 @@ export default {
 
             informes: [{
                     year: '2021-2022',
-                    src: 'https://www.cpccoahuila.org.mx/informesanuales/informesanuales/cpc-coahuila-informe-resultados-2021-2022.pdf'
+                    src: 'cpc-coahuila-informe-resultados-2021-2022.pdf'
                 },
                 {
                     year: '2020-2021',
-                    src: 'https://www.cpccoahuila.org.mx/informesanuales/informesanuales/cpc-coahuila-informe-resultados-2020-2021.pdf'
+                    src: 'cpc-coahuila-informe-resultados-2020-2021.pdf'
                 },
                 {
                     year: '2019-2020',
-                    src: 'https://www.cpccoahuila.org.mx/informesanuales/informesanuales/cpc-coahuila-informe-resultados-2019-2020.pdf'
+                    src: 'cpc-coahuila-informe-resultados-2019-2020.pdf'
                 },
                 {
                     year: '2018-2019',
-                    src: 'https://www.cpccoahuila.org.mx/informesanuales/informesanuales/cpc-coahuila-informe-resultados-2018-2019.pdf'
+                    src: 'cpc-coahuila-informe-resultados-2018-2019.pdf'
+                },
+
+            ],
+            planes: [{
+                    year: 'Plan de Comunicación',
+                    src: 'plan-de-comunicacion-cpc.pdf'
+                },
+                {
+                    year: '2020',
+                    src: 'plan-de-trabajo-cpc-2020.pdf'
+                },
+                {
+                    year: '2019',
+                    src: 'plan-de-trabajo-cpc-2019.pdf'
+                },
+                {
+                    year: '2018',
+                    src: 'plan-de-trabajo-cpc-2018.pdf'
                 },
 
             ],
