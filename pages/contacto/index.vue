@@ -1,47 +1,111 @@
 <template>
-<v-container>
+    <v-container>
 
-    <v-row>
-        <v-col>
-            <v-alert :color="page.color" class="mx-auto text-justify" border="top" colored-border elevation="2" :icon="page.icon" prominent>
+        <v-row>
 
-                <div align="center" class="mb-5 text-xl-h1 text-md-h3 text-h4">{{(page.title)}}</div>
+            <v-col cols="12">
+                <v-alert :color="page.color" class="mx-auto text-justify" border="top" colored-border elevation="2"
+                    :icon="page.icon" prominent>
 
-            </v-alert>
-            <div v-for="(e,i) in page.contactos" :key="i">
+                    <div align="center" class="mb-5 text-xl-h1 text-md-h3 text-h4">{{ (page.title) }}</div>
 
-                <v-card class="mt-8" color="article">
-                    <v-row>
+                </v-alert>
+            </v-col>
 
-                        <v-col align="center" cols='6' justify="center">
-                            <v-img width="300" :lazy-src="require('@/static/img/' + e.icon)" :src="require('@/static/img/' + e.icon)"></v-img>
-                        </v-col>
+            <v-col cols="12">
 
-                        <v-col cols="6">
+                <div v-for="(e, i) in page.contactos" :key="i">
 
-                            <div class="mb-5 text-xl-h4 text-md-h5 ">{{ e.dependencia }}</div>
-                            <div class="mb-5 text-subtitle-2 font-weight-bold" v-for="(i,index) in e.datos" :key="index"> {{ i }}</div>
-                            <div v-if=" e.dependencia === 'Secretaría Ejecutiva'">
+                    <v-card class="mt-8" color="article">
+                        <v-row>
 
-                                <v-btn href="https://www.google.com/maps/dir//Secretar%C3%ADa+Ejecutiva+del+Sistema+Anticorrupci%C3%B3n+del+Estado+de+Coahuila+de+Zaragoza,+Blvd.+Luis+Donaldo+Colosio+No.+703.+Piso+3,+Fraccionamiento+Valle+Real,+25205+Saltillo,+Coah.,+M%C3%A9xico/@25.4705483,-100.9604294,18z/data=!4m8!4m7!1m0!1m5!1m1!1s0x86881331ebb6aadd:0x2c4069ae06e6a973!2m2!1d-100.9604294!2d25.4705483 ">
+                            <v-col align="center" cols='6' justify="center" align-self="center">
+                                <v-img width="300"  :lazy-src="require('@/static/img/' + e.icon)"
+                                    :src="require('@/static/img/' + e.icon)"></v-img>
+                            </v-col>
 
-                                    <v-icon color="red">mdi-map-marker-radius </v-icon>  Ver ubicación
+                            <v-col cols="6">
 
-                                </v-btn>
+                                <div class="mb-5 text-xl-h4 text-md-h5 ">{{ e.dependencia }}</div>
+                                <div class="mb-5 text-subtitle-2 font-weight-bold" v-for="(i, index) in e.datos"
+                                    :key="index"> {{ i }}</div>
+                                <div class="media mb-4">
+                                    <div class="w-25 mr-2">
+                                    </div>
+                                    <div class="media-body align-self-end">
+                                        <h5 class="mt-0">Jafia Pacheco Valtierra</h5>
+                                        <a
+                                            href="mailto:jafia.pacheco@cpccoahuila.org.mx">jafia.pacheco@cpccoahuila.org.mx</a>
+                                    </div>
+                                </div>
 
-                            </div>
+                                <div class="media mb-4">
+                                    <div class="w-25 mr-2">
+                                    </div>
+                                    <div class="media-body align-self-end">
+                                        <h5 class="mt-0">Miguel Francisco Crespo Alvarado</h5>
+                                        <a
+                                            href="mailto:miguel.crespo@cpccoahuila.org.mx">miguel.crespo@cpccoahuila.org.mx</a>
+                                    </div>
+                                </div>
 
-                        </v-col>
+                                <div class="media mb-4">
+                                    <div class="w-25 mr-2">
+                                    </div>
+                                    <div class="media-body align-self-end">
+                                        <h5 class="mt-0">Yolanda Guadalupe Montes Martínez</h5>
+                                        <a
+                                            href="mailto:yolanda.montes@cpccoahuila.org.mx">yolanda.montes@cpccoahuila.org.mx</a>
+                                    </div>
+                                </div>
 
-                    </v-row>
+                                <div class="media mb-4">
+                                    <div class="w-25 mr-2">
+                                    </div>
+                                    <div class="media-body align-self-end">
+                                        <h5 class="mt-0">Juan Carlos Guzmán Escobedo</h5>
+                                        <a
+                                            href="mailto:carlos.guzman@cpccoahuila.org.mx">carlos.guzman@cpccoahuila.org.mx</a>
+                                    </div>
+                                </div>
+
+                                <div class="media mb-4">
+                                    <div class="w-25 mr-2">
+                                    </div>
+                                    <div class="media-body align-self-end">
+                                        <h5 class="mt-0">Karla Samperio Flores</h5>
+                                        <a
+                                            href="mailto:karla.samperio@cpccoahuila.org.mx">karla.samperio@cpccoahuila.org.mx</a>
+                                    </div>
+                                </div>
+
+                            </v-col>
+
+                        </v-row>
+
+                    </v-card>
+
+                </div>
+
+            </v-col>
+            <v-col cols="12">
+                <v-card>
+                    <v-card-title class="justify-center mb-4">
+                        <v-icon x-large :color="page.color">mdi-email-edit-outline</v-icon>
+                        <div class=" text-xl-h3 text-md-h4"> Buzón de contacto y acceso a la información</div>
+                    </v-card-title>
+
+                    <v-col align="center" justify="center" class="pa-8">
+                        <v-btn block large>Acceder</v-btn>
+
+                    </v-col>
 
                 </v-card>
 
-            </div>
+            </v-col>
+        </v-row>
 
-        </v-col>
-    </v-row>
-</v-container>
+    </v-container>
 </template>
 
 <script>
@@ -54,29 +118,20 @@ export default {
                 title: 'Contacto',
                 icon: 'mdi-card-account-phone-outline',
                 contactos: [
+
                     {
-                    dependencia: 'Secretaría Ejecutiva',
-                    icon: 'seac.png',
-                    datos: [
-                        'Telefono: (844) 688 2178',
-                        'Correo: informacion@seacoahuila.org.mx',
-                        'Dirección: Blvd. Luis Donaldo Colosio No. 703 Piso 3 Fracc. Valle Real Saltillo, Coahuila de Zaragoza, México. C.P. 25205.',
-                        'Horario de atención: De 08:30 a 17:00 de lunes a jueves, de 08:30 a 14:30 viernes.'
-                    ]
-                },
-                {
-                    dependencia: 'Consejo de Participación Ciudadana',
-                    icon: 'cc-cpc.png',
-                    datos: [
-                        'Telefono: (844) 688 2178',
-                        'Página Web: https://www.cpccoahuila.org.mx',
-                        'Correos:',
-                        'jafia.pacheco@cpccoahuila.org.mx // miguel.crespo@cpccoahuila.org.mx // yolanda.montes@cpccoahuila.org.mx // carlos.guzman@cpccoahuila.org.mx //  karla.samperio@cpccoahuila.org.mx',
-                    ]
-                }
-            
-            
-            ]
+                        dependencia: 'Consejo de Participación Ciudadana',
+                        icon: 'cc-cpc.png',
+                        datos: [
+                            'Telefono: (844) 688 2178',
+                            'Página Web: https://www.cpccoahuila.org.mx',
+                            'CONSEJEROS',
+
+                        ]
+                    }
+
+
+                ]
             }
         }
 
@@ -84,6 +139,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-
-    </style>
+<style lang="scss" scoped></style>

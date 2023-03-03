@@ -4,7 +4,7 @@
       v-model="drawer"
       :mini-variant.sync="miniVariant"
       :clipped="clipped"
-      
+      mini-variant-width="65"
       width="auto"
       :permanent="$vuetify.breakpoint.mdAndUp"
       dark
@@ -64,7 +64,7 @@
         icon
         @click.stop="clipped = !clipped"
       >
-      <v-avatar size="25"> <img  src="@/static/img/sea-icon.png" alt="Icono Sea"/></v-avatar>  
+      <v-avatar size="25"> <img  src="@/static/img/cpc.png" alt="Icono Sea"/></v-avatar>  
       </v-btn> {{ title }} </v-toolbar-title>
      
       <v-spacer />
@@ -74,16 +74,12 @@
                     {{ icon.icon }}
                 </v-icon>
             </v-btn>
-            <v-btn v-if="$store.state.usuario.status" @click="cerrarSesion" class="mx-4 white--text" icon>
-                <v-icon size="24px">
-                  mdi mdi-logout
-                </v-icon>Log-Out
-            </v-btn>
+           
       <v-switch
         class="mt-4 ml-8" 
         v-model="$vuetify.theme.dark"
         inset
-        label="M-Obscuro"
+        label="Modo-Obscuro"
         persistent-hint
         
       ></v-switch>
@@ -113,7 +109,6 @@
 <script>
 import lineUp from '@/components/LineUp'
 import footerN from '@/components/Footer'
-import {mapActions, mapstate} from 'vuex'
 
 
 export default {
@@ -125,7 +120,7 @@ export default {
   },
   data () {
     return {
-      colorNav: '#1d2730',
+      colorNav: '#383550',
       clipped: true,
       drawer: false,
       fixed: false,
@@ -134,7 +129,7 @@ export default {
           icon: 'mdi-home',
           title: 'Inicio',
           to: '/',
-          color: 'cyan lighten-1'
+          color: 'deep-purple lighten-2'
         },
         {
           icon: 'mdi-magnify',
@@ -142,77 +137,71 @@ export default {
           to: '/transparencia',
           color: 'teal lighten-1'
         },
-        {
-          avatar: 'peaclog.png',
-          title: 'Política Estatal Anticorrupción',
-          to: '/peac',
-          color: 'warning'
-        },
-        {
-          avatar: 'sistemalog.png',
-          title: 'Sistema Estatal de Información',
-          to: '/sei'
-        },
+    
        
         {
-          avatar: 'azimutlog.png',
-          title: 'Revista Azimut',
-          to: '/azimut',
-        },
-        {
-          icon: 'mdi-comma-circle-outline',
-          title: 'Publicaciónes',
-          to: '/publicaciones'
-        },
-        {
-          icon: 'mdi-account-group',
-          title: 'Comité Coordinador',
-          to: '/cc',
-          color: 'orange lighte-2'
-        },
-        {
           avatar: 'cpclog.png',
-          title: 'Comité de Participación Ciudadana',
-          to: '/CPC',
+          title: 'Quienes Somos',
+          to: '/cpc',
           color: 'purple lighten-2'
         },
         {
-          icon: 'mdi-cogs',
-          title: 'Secretaría ejecutiva',
-          to: '/SE',
+          icon: 'mdi-webhook',
+          title: 'Red Ciudadana',
+          to: '/redCiudadana',
           color: 'pink'
         },
         {
-          icon: 'mdi-cog',
-          title: 'Comisión Ejecutiva',
-          to: '/ce',
+          icon: 'mdi-script-text',
+          title: 'Sesiones de pleno',
+          to: '/sesiones',
+          color: ''
+        },
+        {
+          icon: 'mdi-newspaper-variant-outline',
+          title: 'Comunicados',
+          to: '/comunicados',
+          color: 'amber darken-1'
+        },
+        {
+          icon: 'mdi-briefcase-plus-outline',
+          title: 'Convocatorias',
+          to: '/convocatorias',
           color: 'blue-grey'
+        },
+        {
+          icon: 'mdi-monitor-dashboard',
+          title: 'Sitios de Interés',
+          to: '/sitios',
+          color: 'light-blue '
+        },
+     
+        {
+          icon: 'mdi-chart-arc',
+          title: 'Indicadores',
+          to: '/cc',
+          color: 'red accent-1'
         },
         {
           icon: 'mdi-card-account-phone-outline',
           title: 'Contacto',
           to: '/contacto',
-          color: 'cyan darken-3'
-        },
-        {
-          icon: 'mdi-badge-account',
-          title: 'Log-in Instituciónes',
-          to: '/admin',
           color: ''
         },
-      
+        
+        
       ],
       miniVariant: true,
       right: true,
       rightDrawer: false,
-      title: 'Sea Coahuila',
+      title: 'CPC',
       icons: [{
                 icon: 'mdi-facebook',
-                to: 'https://www.facebook.com/seseacoah'
+                to: 'https://www.facebook.com/CPCCoahuila/'
             },
             {
                 icon: 'mdi-twitter',
-                to: 'https://twitter.com/seseacoah?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Escreen-name%3Aseseacoah%7Ctwcon%5Es2'
+                to: 'https://twitter.com/CPCCoahuila'
             },
             {
                 icon: 'mdi-youtube',
@@ -223,18 +212,12 @@ export default {
     }
   },
   methods:{
-    ...mapActions(['readUserLocalStorage', 'cerrarSesion'])
+
   },
   created(){
     
-    this.readUserLocalStorage()
+  
     },
-  //   beforeMount() {
-  //     this.readUserLocalStorage()
-    
-  // },
-  // beforeCreate(){
-  //   this.readUserLocalStorage()
-  // }
+
 }
 </script>

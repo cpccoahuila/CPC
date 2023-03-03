@@ -4,13 +4,13 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
   router: {
-    base: '/SEA/'
+    base: '/CPC/'
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - SeaCoahuila',
-    title: 'SeaCoahuila',
+    titleTemplate: '%s - CPC',
+    title: 'CPC',
     htmlAttrs: {
       lang: 'en'
     },
@@ -148,7 +148,7 @@ export default {
       const assetsLoader = config.module.rules.find(rule => rule.test.test('.png'));
 
       // Overwrite the test regex and add `pdf`
-      assetsLoader.test = /\.(png|jpe?g|gif|svg|webp|pdf|xlsx)$/i;
+      assetsLoader.test = /\.(png|jpe?g|gif|svg|webp|pdf|xlsx|doc|docx|xls)$/i;
 
       return config;
     },

@@ -2,12 +2,11 @@
 <div>
  
 
-    <v-container>
+    <v-container class="min-height-vh ">
         
         <Carrusel />
       
-        <Data />
-   <Organismos />
+
         
     </v-container>
 </div>
@@ -16,19 +15,25 @@
 <script>
 
 import Carrusel from '@/components/Carousel'
-import Organismos from '@/components/Organismos'
-import Data from '@/components/Datos'
+
+
 import lineUp from '@/components/LineUp'
 export default {
     name: 'IndexPage',
     components: {
         Carrusel,
-        Organismos,
-        Data,
-        lineUp
+    
+     
+ 
     },
 
 
 
 }
 </script>
+
+<style lang="scss" >
+.min-height-vh {
+  min-height: 70vh;
+}
+</style>
