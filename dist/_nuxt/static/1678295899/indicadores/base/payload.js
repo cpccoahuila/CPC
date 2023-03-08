@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/indicadores/base", {data:[{}],fetch:{},mutations:[]});
