@@ -185,7 +185,7 @@ export default {
         {
           icon: 'mdi-chart-arc',
           title: 'Indicadores',
-          to: '/cc',
+          to: '/indicadores',
           color: 'red accent-1'
         },
         {
