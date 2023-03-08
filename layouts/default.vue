@@ -8,6 +8,7 @@
       width="auto"
       :permanent="$vuetify.breakpoint.mdAndUp"
       dark
+      
       :color="colorNav"
       fixed
       app
@@ -30,6 +31,7 @@
           :to="item.to"
           router
           exact
+          
           two-line
           @click.stop="drawer = !drawer"
         >
@@ -64,11 +66,15 @@
         icon
         @click.stop="clipped = !clipped"
       >
-      <v-avatar size="25"> <img  src="@/static/img/cpc.png" alt="Icono Sea"/></v-avatar>  
+      <v-avatar size="25"> <img  src="@/static/img/cpc.png" alt="Icono Sea"/></v-avatar> 
+
       </v-btn> {{ title }} </v-toolbar-title>
      
       <v-spacer />
-      
+  <!-- * Aqui va el buscador -->
+
+  <div class="gcse-search"></div>
+  <v-text-field id="123456"></v-text-field>
       <v-btn v-for="(icon,i) in icons" :href="icon.to" :key="i" class="mx-4 white--text" icon>
                 <v-icon size="24px">
                     {{ icon.icon }}
@@ -218,6 +224,12 @@ export default {
     
   
     },
+    mounted() {
+  const script = document.createElement("script");
+  script.setAttribute("src", "https://cse.google.com/cse.js?cx=123456");
+  script.setAttribute("async", "");
+  document.head.appendChild(script);
+},
 
 }
 </script>
