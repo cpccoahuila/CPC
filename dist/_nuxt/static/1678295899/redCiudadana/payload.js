@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/redCiudadana", {data:[{}],fetch:{},mutations:[]});
