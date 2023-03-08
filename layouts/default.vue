@@ -72,14 +72,14 @@
      
       <v-spacer />
   <!-- * Aqui va el buscador -->
-
+<!-- 
   <div class="gcse-search"></div>
   <v-text-field id="123456"></v-text-field>
       <v-btn v-for="(icon,i) in icons" :href="icon.to" :key="i" class="mx-4 white--text" icon>
                 <v-icon size="24px">
                     {{ icon.icon }}
                 </v-icon>
-            </v-btn>
+            </v-btn> -->
            
       <v-switch
         class="mt-4 ml-8" 
