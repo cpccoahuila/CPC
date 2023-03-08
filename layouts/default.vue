@@ -197,7 +197,7 @@ export default {
         
         
       ],
-      miniVariant: true,
+      miniVariant: false,
       right: true,
       rightDrawer: false,
       title: 'CPC',

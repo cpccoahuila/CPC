@@ -166,19 +166,19 @@ export default {
             cronograma: 'cronograma-2022.pdf',
             convocatoria: 'convocatoria.pdf',
             integrantesRed: [
+                'ANADE LAGUNA',
+                'AIDH',
+                'Asociación Cívica de la Laguna',
+                'CANACO Monclova',
+                'CANACO Francisco I.Madero',
+                'CCI LAGUNA',
+                'COPARMEX MUJERES',
+                'Fundación Merced',
+                'INCIDE FEMME',
+                'JOVENES LIDERES DE LA LAGUNA',
+                'KYBERNUS COAHUILA',
                 'UANE',
                 'Universidad Carolina',
-                'CANACO Monclova',
-                'Asociación Cívica de la Laguna',
-                'Fundación Merced',
-                'AIDH',
-                'CANACO Francisco I.Madero',
-                'INCIDE FEMME',
-                'KYBERNUS COAHUILA',
-                'CCI LAGUNA',
-                'JOVENES LIDERES DE LA LAGUNA',
-                'ANADE LAGUNA',
-                'COPARMEX MUJERES'
             ]
 
         }

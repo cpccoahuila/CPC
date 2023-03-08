@@ -114,16 +114,16 @@ export default {
                     to: '21-11',
                     icon: 'mdi-chart-donut-variant'
                 },
-                {
-                    titulo: 'Servicios y trámites',
-                    to: '21-12',
-                    icon: 'mdi-face-agent'
-                },
-                {
-                    titulo: 'Presupuesto asignado',
-                    to: '21-20',
-                    icon: 'mdi-cash-check'
-                },
+                // {
+                //     titulo: 'Servicios y trámites',
+                //     to: '21-12',
+                //     icon: 'mdi-face-agent'
+                // },
+                // {
+                //     titulo: 'Presupuesto asignado',
+                //     to: '21-20',
+                //     icon: 'mdi-cash-check'
+                // },
                 {
                     titulo: 'Calendario de reuniones públicas',
                     to: '21-21',
@@ -134,11 +134,11 @@ export default {
                     to: '21-22',
                     icon: 'mdi-card-search-outline'
                 },
-                {
-                    titulo: 'Informes financieros y cuenta pública',
-                    to: '21-25',
-                    icon: 'mdi-finance'
-                },
+                // {
+                //     titulo: 'Informes financieros y cuenta pública',
+                //     to: '21-25',
+                //     icon: 'mdi-finance'
+                // },
                
                 {
                     titulo: 'Actas de entrega-recepción',
@@ -146,11 +146,11 @@ export default {
                     icon: 'mdi-file-document-outline'
                 },
 
-                {
-                    titulo: 'Entrega de recursos públicos',
-                    to: '21-38',
-                    icon: 'mdi-handshake-outline'
-                },
+                // {
+                //     titulo: 'Entrega de recursos públicos',
+                //     to: '21-38',
+                //     icon: 'mdi-handshake-outline'
+                // },
                 {
                     titulo: 'Informe de actividades',
                     to: '21-40',
