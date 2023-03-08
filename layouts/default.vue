@@ -153,7 +153,7 @@ export default {
         },
         {
           icon: 'mdi-webhook',
-          title: 'Redes Ciudadanas',
+          title: 'Red Ciudadana',
           to: '/redCiudadana',
           color: 'pink'
         },
