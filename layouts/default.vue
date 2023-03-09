@@ -32,7 +32,7 @@
           router
           exact
           
-          two-line
+         
           @click.stop="drawer = !drawer"
         >
           <v-list-item-action >
