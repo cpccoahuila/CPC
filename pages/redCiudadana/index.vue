@@ -69,7 +69,7 @@
                             organismos, instituciones, colegios, grupos ciudadanos e individuos interesados en consolidar la
                             participación ciudadana en el combate a la corrupción mediante el uso de herramientas y
                             metodologías adecuadas. Su principal finalidad es la de transversalizar e implementar la
-                            política estatal anticorrupción, enfocandose en mecanismos de capacitación, la escucha activa y
+                            política estatal anticorrupción, enfocándose en mecanismos de capacitación, la escucha activa y
                             el impulso de iniciativas nacidas de la sociedad civil organizada en favor de la lucha
                             anticorrupción.
 
@@ -80,7 +80,7 @@
 
                         </p>
                         <v-btn block elevation="3" :color="page.color" dark href="https://forms.gle/bSVMAxGydghpYWUx5">
-                            Registrese Aqui </v-btn>
+                            Registrese Aquí </v-btn>
                     </v-card-text>
                     <v-divider class="ma-8"></v-divider>
 
@@ -145,7 +145,7 @@ export default {
                 },
                 {
                     titulo: '',
-                    texto: 'Con la intención de establecer claramente el “porqué”, “para qué” y “cómo” de la Red de Participación Ciudadana, durante los meses de mayo a agosto de 2021 se convocó a un conjunto de asociaciones, universidades, colegios y cámaras a realizar ejercicios participativos que permitieran formar en conjunto las primeras * LINEAS ESTRATEGICAS de la Red.'
+                    texto: 'Con la intención de establecer claramente el “por qué”, “para qué” y “cómo” de la Red de Participación Ciudadana, durante los meses de mayo a agosto de 2021 se convocó a un conjunto de asociaciones, universidades, colegios y cámaras a realizar ejercicios participativos que permitieran formar en conjunto las primeras * LINEAS ESTRATEGICAS de la Red.'
                 },
                 {
                     titulo: 'Misión',
@@ -175,7 +175,7 @@ export default {
                 'COPARMEX MUJERES',
                 'Fundación Merced',
                 'INCIDE FEMME',
-                'JOVENES LIDERES DE LA LAGUNA',
+                'JÓVENES LÍDERES DE LA LAGUNA',
                 'KYBERNUS COAHUILA',
                 'UANE',
                 'Universidad Carolina',
