@@ -64,54 +64,46 @@ export default {
                 icon: 'mdi-magnify'
             },
 
-            art20: [{
-                    año: 'Calendario de información pública de oficio',
-                    to: '20-1',
-
-                },
-               
-            ],
-
             fracciones: [
                 {
                     titulo: 'Marco normativo',
-                    to: '21-2',
+                    to: 'CPC-1',
                     icon: 'mdi-scale-balance'
                 },
              
                 {
                     titulo: 'Remuneración mensual',
-                    to: '21-5',
+                    to: 'CPC-2',
                     icon: 'mdi-account-credit-card'
                 },
                 {
                     titulo: 'Declaración 3 de 3',
-                    to: '21-6',
+                    to: 'CPC-3',
                     icon: ' mdi-account-search'
                 },
                 {
                     titulo: 'Viáticos y gastos de representación',
-                    to: '21-7',
+                    to: 'CPC-4',
                     icon: 'mdi-plane-car'
                 },
                 {
                     titulo: 'Perfil de puestos y currículum',
-                    to: '21-8',
+                    to: 'CPC-5',
                     icon: 'mdi-badge-account-outline'
                 },
                 {
                     titulo: 'Convenios de colaboración',
-                    to: '21-9',
+                    to: 'CPC-6',
                     icon: ' mdi-file-sign'
                 },
                 {
                     titulo: 'Documentos Operativos y de Gestión',
-                    to: '21-4',
+                    to: 'CPC-7',
                     icon: 'mdi-folder-account-outline'
                 },
                 {
                     titulo: 'Planes, programas o proyectos',
-                    to: '21-11',
+                    to: 'CPC-8',
                     icon: 'mdi-chart-donut-variant'
                 },
                 // {
@@ -126,12 +118,12 @@ export default {
                 // },
                 {
                     titulo: 'Calendario de reuniones públicas',
-                    to: '21-21',
+                    to: 'CPC-9',
                     icon: 'mdi-laptop-account'
                 },
                 {
                     titulo: 'Seciones del pleno',
-                    to: '21-22',
+                    to: 'CPC-10',
                     icon: 'mdi-card-search-outline'
                 },
                 // {
@@ -142,7 +134,7 @@ export default {
                
                 {
                     titulo: 'Actas de entrega-recepción',
-                    to: '21-32',
+                    to: 'CPC-11',
                     icon: 'mdi-file-document-outline'
                 },
 
@@ -153,7 +145,7 @@ export default {
                 // },
                 {
                     titulo: 'Informe de actividades',
-                    to: '21-40',
+                    to: 'CPC-12',
                     icon: ' mdi-office-building-cog-outline'
                 },
                 
