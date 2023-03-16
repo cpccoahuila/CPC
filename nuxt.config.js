@@ -74,7 +74,7 @@ export default {
   hooks: {
     generate: {
       async done(builder) {
-        const appModule = await import('./.nuxt/firebase/app.js')
+        const appModule = await import('~/.nuxt/firebase/app.js')
         const { session } = await appModule.default(
           builder.options.firebase.config,
           {
