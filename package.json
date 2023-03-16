@@ -7,7 +7,8 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "deploy": "push-dir --dir=dist --branch=gh-pages --remote=gh-pages --cleanup --verbose"
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
+    "pages": "gh-pages -d dist"
   },
   "engines": {
     "node": ">=16.0.0 <17.0.0"
@@ -28,6 +29,7 @@
   },
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.12.3",
+    "gh-pages": "^5.0.0",
     "push-dir": "^0.4.1",
     "xlsx-loader": "^1.0.3"
   }

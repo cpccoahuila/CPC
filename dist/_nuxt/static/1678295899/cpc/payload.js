@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/cpc", {data:[{}],fetch:{},mutations:[]});

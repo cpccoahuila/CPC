@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/convocatorias", {data:[{}],fetch:{},mutations:[]});

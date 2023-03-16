@@ -8,7 +8,7 @@
       width="auto"
       :permanent="$vuetify.breakpoint.mdAndUp"
       dark
-      
+      height="100%"
       :color="colorNav"
       fixed
       app
@@ -23,7 +23,7 @@
           <v-icon>mdi-apps</v-icon>
         </v-list-item-icon>
 
-        <v-list-item-title>Menu</v-list-item-title>
+        <v-list-item-title>Menú</v-list-item-title>
       </v-list-item>
         <v-list-item
           v-for="(item, i) in items"
@@ -32,7 +32,7 @@
           router
           exact
           
-          two-line
+         
           @click.stop="drawer = !drawer"
         >
           <v-list-item-action >
@@ -41,13 +41,17 @@
           <div v-if="item.avatar">  <v-avatar size="25"><img  :src="require('@/static/img/botonera/' + item.avatar)" alt="azimut"></v-avatar></div>
           <div v-if="item.peac">  <v-avatar size="25"> <img  src="@/static/img/botonera/peaclog.png" alt="peac"></v-avatar></div>
           <div v-if="item.sistema">  <v-avatar size="25"> <img  src="@/static/img/botonera/sistemalog.png" alt="azimut"></v-avatar></div>
+          
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title>{{ item.title }} </v-list-item-title>
           </v-list-item-content>
           
         </v-list-item>
+
+
       </v-list>
+   
     </v-navigation-drawer>
 
 
@@ -147,7 +151,7 @@ export default {
        
         {
           avatar: 'cpclog.png',
-          title: 'Quienes Somos',
+          title: 'Quiénes Somos',
           to: '/cpc',
           color: 'purple lighten-2'
         },

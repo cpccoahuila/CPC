@@ -188,7 +188,7 @@ export default {
         return {
             page: {
                 color: 'purple',
-                title: 'Quienes Somos',
+                title: 'Quiénes Somos',
                 icon: 'mdi-account-supervisor-circle-outline',
                 presentacion: [{
                     titulo: 'Misión',
@@ -243,7 +243,7 @@ export default {
             ],
             integrantes: [{
                 nombre: 'Jafia Pacheco Valtierra',
-                cargo: 'Consejera Presidente del Consejo de Participación Ciudadana.',
+                cargo: 'Consejera Presidenta del Consejo de Participación Ciudadana.',
                 foto: 'cpc-jpv.jpg',
                 img: 'cc-cpc.png',
                 mail: 'jafia.pacheco@cpccoahuila.org.mx'

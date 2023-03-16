@@ -123,7 +123,7 @@ export default {
                         dependencia: 'Consejo de Participación Ciudadana',
                         icon: 'cc-cpc.png',
                         datos: [
-                            'Telefono: (844) 688 2178',
+                            'Teléfono: (844) 688 2178',
                             'Página Web: https://www.cpccoahuila.org.mx',
                             'CONSEJEROS',
 
