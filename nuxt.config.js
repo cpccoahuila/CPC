@@ -56,7 +56,7 @@ export default {
   ],
   // MIDDLEWARES
   firebase: {
-    terminateDatabasesAfterGenerate: true
+    terminateDatabasesAfterGenerate: true,
     config: {
       apiKey: "AIzaSyDIS5dpFmXD6qjmH51HrQ_UMmKWtRvKKxc",
       authDomain: "transparenciaseac.firebaseapp.com",

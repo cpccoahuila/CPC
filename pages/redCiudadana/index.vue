@@ -50,7 +50,7 @@
 
                     <v-card-text align="center">
 
-                        <p class="text-h5">Cronograma 2022</p>
+                        <p class="text-h5">Cronograma 2022..</p>
                         <p>Ya contamos con un primer programa de trabajo enfocado en la formación y formalización de la Red
                             de Participación Ciudadana. Abarca el segundo semestre de este año 2022 y pronto formaremos una
                             agenda anticorrupción que nos permita incidir con fuerza en la agenda pública.</p>
