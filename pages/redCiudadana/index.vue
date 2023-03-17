@@ -121,7 +121,7 @@
                 <v-card-text align="center">
                     <p class="text-h4 mb-10">ANTEPROYECTO:</p>
                     <a href="https://www.cpccoahuila.org.mx/osc/objetivo/lineas-estrategicas.pdf">
-                        <v-img max-width="1200" :src="require('@/static/img/plan.jpg')"></v-img>
+                        <v-img max-width="1200" :src="require('@/static/img/cpc/plan.jpg')"></v-img>
                     </a>
                 </v-card-text>
             </v-col>

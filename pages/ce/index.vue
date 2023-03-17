@@ -196,7 +196,7 @@
                     cargo: 'Integrante de la de la Comisión Ejecutiva',
                     foto: 'cpc-ygmm.jpg',
                     img: 'cc-cpc.png',
-                    mail: 'yolanda.montes@cpccoahuila.org.mx'
+                    mail: 'yolanda.montes@cpccoahuila.org.m'
                 },
                 {
                     nombre: 'Juan Carlos Guzmán Escobedo',
