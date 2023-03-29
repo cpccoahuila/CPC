@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/transparencia/CPC-12", {data:[{}],fetch:{},mutations:[]});
