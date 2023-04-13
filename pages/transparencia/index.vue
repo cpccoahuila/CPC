@@ -29,7 +29,7 @@
                             <v-col cols="12" md="4" v-for="(fraccion, i) in fracciones" :key="i">
                                 <v-list color="bluegreyt">
 
-                                    <v-list-item class="justify-center" align="center" :to="'transparencia/'+fraccion.to" router exact>
+                                    <v-list-item class="justify-center" align="center" :to="'/transparencia/'+fraccion.to" router exact>
                                         <v-row>
                                             <v-col cols="12">
                              
@@ -66,45 +66,45 @@ export default {
 
             fracciones: [
                 {
-                    titulo: 'Marco normativo',
+                    titulo: 'Actas',
                     to: 'CPC-1',
-                    icon: 'mdi-scale-balance'
+                    icon: 'mdi-file-document-outline'
                 },
              
                 {
-                    titulo: 'Remuneración mensual',
+                    titulo: 'Acuerdos',
                     to: 'CPC-2',
-                    icon: 'mdi-account-credit-card'
+                    icon: 'mdi-handshake-outline'
                 },
                 {
-                    titulo: 'Declaración 3 de 3',
+                    titulo: 'Calendario de sesiones',
                     to: 'CPC-3',
-                    icon: ' mdi-account-search'
+                    icon: ' mdi-calendar-month-outline'
                 },
                 {
-                    titulo: 'Viáticos y gastos de representación',
+                    titulo: 'Contratos de prestación de servicios',
                     to: 'CPC-4',
-                    icon: 'mdi-plane-car'
-                },
-                {
-                    titulo: 'Perfil de puestos y currículum',
-                    to: 'CPC-5',
-                    icon: 'mdi-badge-account-outline'
+                    icon: 'mdi-file-sign'
                 },
                 {
                     titulo: 'Convenios de colaboración',
+                    to: 'CPC-5',
+                    icon: 'mdi-account-multiple-plus-outline'
+                },
+                {
+                    titulo: 'Declaraciones Patrimoniales',
                     to: 'CPC-6',
-                    icon: ' mdi-file-sign'
+                    icon: ' mdi-account-search'
                 },
                 {
-                    titulo: 'Documentos Operativos y de Gestión',
+                    titulo: 'Informes',
                     to: 'CPC-7',
-                    icon: 'mdi-folder-account-outline'
+                    icon: 'mdi-file-chart-outline'
                 },
                 {
-                    titulo: 'Planes, programas o proyectos',
+                    titulo: 'Marco Legal',
                     to: 'CPC-8',
-                    icon: 'mdi-chart-donut-variant'
+                    icon: 'mdi-scale-balance'
                 },
                 // {
                 //     titulo: 'Servicios y trámites',
@@ -117,14 +117,14 @@ export default {
                 //     icon: 'mdi-cash-check'
                 // },
                 {
-                    titulo: 'Calendario de reuniones públicas',
+                    titulo: 'Planes',
                     to: 'CPC-9',
-                    icon: 'mdi-laptop-account'
+                    icon: 'mdi-chart-donut-variant'
                 },
                 {
-                    titulo: 'Seciones del pleno',
+                    titulo: 'Programas',
                     to: 'CPC-10',
-                    icon: 'mdi-card-search-outline'
+                    icon: 'mdi-notebook-outline'
                 },
                 // {
                 //     titulo: 'Informes financieros y cuenta pública',
@@ -133,9 +133,9 @@ export default {
                 // },
                
                 {
-                    titulo: 'Actas de entrega-recepción',
+                    titulo: 'Viáticos',
                     to: 'CPC-11',
-                    icon: 'mdi-file-document-outline'
+                    icon: 'mdi-plane-car'
                 },
 
                 // {
@@ -143,11 +143,11 @@ export default {
                 //     to: '21-38',
                 //     icon: 'mdi-handshake-outline'
                 // },
-                {
-                    titulo: 'Informe de actividades',
-                    to: 'CPC-12',
-                    icon: ' mdi-office-building-cog-outline'
-                },
+                // {
+                //     titulo: 'Viáticos',
+                //     to: 'CPC-12',
+                //     icon: ' mdi-office-building-cog-outline'
+                // },
                 
             ],
         }
