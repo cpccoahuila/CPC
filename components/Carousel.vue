@@ -1,9 +1,11 @@
 <template>
 <div>
-    <v-card color="accent" class="mt-10">
-        <v-col cols="12">
+    <v-card color="accent" class="mt-10" v-if="items.length != 0">
+        <v-col cols="12" >
+
 
             <v-carousel height="">
+                
                 <v-carousel-item v-for="(item,i) in items" :key="i" dark>
                     <!-- Si existe documento y usamos href con requiere para acceder a el documento -->
                     <div v-if="item.doc">
@@ -29,9 +31,11 @@
         </v-col>
 
         <v-divider></v-divider>
-    </v-card>
 
- 
+    </v-card >
+    <v-card class="mt-12">
+    <v-img  :src="require('@/static/img/banners/triptico.jpg')"></v-img>
+ </v-card>
 </div>
 </template>
 
