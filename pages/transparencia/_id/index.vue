@@ -74,6 +74,7 @@ export default {
             const secs = await this.$fire.firestore.collection('modulos/'+mods.docs[0].id+'/secciones').orderBy('uid','asc').get();
             secs.docs.forEach(async(sec) => {
                 const docus = await this.$fire.firestore.collection('modulos/'+mods.docs[0].id+'/secciones/'+sec.id+'/documentos').orderBy('uid','asc').get();
+                docs = [];
                 docus.docs.forEach((docu) => {
                     docs.push({id:docu.id, ...docu.data()});
                 })
