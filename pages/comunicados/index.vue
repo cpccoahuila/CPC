@@ -13,7 +13,14 @@
     
                 <v-card class="mt-3 pa-10"  color="article">
                     <v-col aling="center" justify="center" >
-      
+                    
+                        <div v-for=" e in comunicados">
+                           <h1>{{e.titulo}}</h1>
+                           <h4>{{e.texto}}</h4>
+                          <a :href="require('@/static/comunicados' + e.documento)">{{e.link}}</a> 
+                           
+
+                        </div>
                         
                   
                     </v-col>
@@ -38,11 +45,22 @@
         name: 'Comunicados',
         data() {
             return {
+                
                 page: {
                     color: 'amber darken-1',
                     title: 'Comunicados',
                     icon: 'mdi-comma-circle-outline'
-                }
+                },
+
+                comunicados: [
+                    {
+                    titulo: "Comunicado",
+                    texto: "Posicionamiento de la Red de Comités de Participación respecto a la iniciativa que pretende eliminar a la Secretaría Ejecutiva del Sistema Nacional Anticorrupción",
+                    link: "Ver comunicado",
+                    documento: "/Comunicado CPC.pdf"
+                    },
+                  
+            ]
             }
     
         },

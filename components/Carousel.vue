@@ -54,11 +54,16 @@ export default {
             //     src: "banner_unodc.png",
             //     to: "https://www.google.com/"
             // },
+
+            {
+                src: "banner-iniciativa.jpg",
+                doc: "Comunicado CPC.pdf"
+            },
             
              {
                  src: "banner_unodc.png",
              }
-
+             
                 
 
             ],
