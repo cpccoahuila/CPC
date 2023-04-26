@@ -50,7 +50,7 @@
 
                     <v-card-text align="center">
 
-                        <p class="text-h5">Cronograma 2022..</p>
+                        <p class="text-h5">Cronograma 2022</p>
                         <p>Ya contamos con un primer programa de trabajo enfocado en la formación y formalización de la Red
                             de Participación Ciudadana. Abarca el segundo semestre de este año 2022 y pronto formaremos una
                             agenda anticorrupción que nos permita incidir con fuerza en la agenda pública.</p>
@@ -120,7 +120,7 @@
                 
                 <v-card-text align="center">
                     <p class="text-h4 mb-10">ANTEPROYECTO:</p>
-                    <a href="https://www.cpccoahuila.org.mx/osc/objetivo/lineas-estrategicas.pdf">
+                    <a :href="require('@/static/cpc/' + anteproyecto)">
                         <v-img max-width="1200" :src="require('@/static/img/plan.jpg')"></v-img>
                     </a>
                 </v-card-text>
@@ -161,8 +161,10 @@ export default {
                 },
 
 
+
                 ]
             },
+            anteproyecto: 'lineas-estrategicas.pdf',
             cronograma: 'cronograma-2022.pdf',
             convocatoria: 'convocatoria.pdf',
             integrantesRed: [
