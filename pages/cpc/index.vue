@@ -149,7 +149,7 @@
                                 <div class=" text-xl-h3 text-md-h4"> Planes</div>
                             </v-card-title>
                             <v-card-actions class="justify-center">
-                                <v-btn v-for=" (e, i) in planes" :key="i" :href="require('@/static/cpc/' + e.src)">{{ e.year
+                                <v-btn v-for=" (e, i) in planes" :key="i" :href="require('@/static/planes/' + e.src)">{{ e.year
                                 }}</v-btn>
 
                             </v-card-actions>
@@ -166,7 +166,7 @@
 
                                 <v-row justify="center">
                                     <v-btn class="ma-2" v-for="(e, i) in informes" :key="i"
-                                        :href="require('@/static/cpc/' + e.src)" label color="" max-width="100%">{{ e.year
+                                        :href="require('@/static/informes/' + e.src)" label color="" max-width="100%">{{ e.year
                                         }}</v-btn>
                                 </v-row>
                             </v-card-actions>
@@ -226,6 +226,14 @@ export default {
             planes: [{
                 year: 'Plan de Comunicación',
                 src: 'plan-de-comunicacion-cpc.pdf'
+            },
+            {
+                year: '2023',
+                src: 'programa-anual-cpc-23.pdf'
+            },
+            {
+                year: '2022',
+                src: 'programa-anual-cpc-22.pdf'
             },
             {
                 year: '2020',
