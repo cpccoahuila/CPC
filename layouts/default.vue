@@ -204,7 +204,7 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'CPC',
+      title: 'CPC Coahuila',
       icons: [{
                 icon: 'mdi-facebook',
                 to: 'https://www.facebook.com/CPCCoahuila/'
