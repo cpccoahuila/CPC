@@ -12,7 +12,7 @@ export default {
     titleTemplate: '%s - CPC',
     title: 'CPC',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'es'
     },
     meta: [
       { charset: 'utf-8' },
