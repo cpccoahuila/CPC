@@ -11,18 +11,18 @@
                     <div align="center" class="mb-5 text-xl-h1 text-md-h3 ">{{ page.title }}</div>
 
                 </v-alert>
-
-                <v-card class="mt-3 pa-10" color="article">
+             
+                    <v-card class="mt-3 pa-10" color="article">
                     <v-col cols="12" align="center" justify="center">
                         <h1 style="color: #4c2882">Sesiones CPC</h1>
-                        <p></p>
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe width="900" height="550"
+                       
+                        <v-col class="embed-responsive embed-responsive-16by9">
+                            <iframe width=100% height="550"
                                 src="https://www.youtube.com/embed/videoseries?list=PLDdlhleuW9zck5BEwLLfTx4YIoD1SaWkN"
                                 frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
-                        </div>
+                        </v-col>
 
                     </v-col>
 
@@ -32,18 +32,20 @@
                     </v-col>
 
                 </v-card>
+              
+    
 
                 <v-card class="mt-3 pa-10" color="article">
                     <v-col cols="12" align="center" justify="center">
                         <h1 style="color: #4c2882;">Transmisión en vivo</h1>
-                        <p></p>
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe width="900" height="550"
+                    
+                        <v-col class="embed-responsive embed-responsive-16by9">
+                            <iframe width=100% height="550"
                                 src="https://www.youtube.com/embed/live_stream?channel=UCgzKc9c1F9ntPAi34XNfy4A"
                                 frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
-                        </div>
+                        </v-col>
 
 
 
@@ -54,38 +56,39 @@
                 <v-card class="mt-10 pa-4" color="article">
                     <v-row v-for="(e, index) in sesiones" :key="index">
                         <v-col aling="center" justify="center" cols="12">
-                            <v-card-title class="justify-center">
+                            <v-card-title class="justify-center mt-4">
                                 <div class=" text-xl-h3 text-md-h4"> {{ e.year }}</div>
                             </v-card-title>
                             <v-divider></v-divider>
                         </v-col>
                         
-                        <v-row justify="center">
+                        <v-row justify="center" class="pa-3">
                           
                               
                              
                                     
-                                      <v-col cols="12" lg="4" md="3" sm="4" xs="12" v-for="(sesion, index) in e.data" :key="index" align="center">
+                                      <v-col cols="12" xl="3" lg="4" md="6" sm="6" xs="12" v-for="(sesion, index) in e.data" :key="index" align="center">
                                         <v-list-item-group class="text-h6">
                                             
-                                            <v-col cols="12">
+                                            <v-card   hover="true"  cols="12" >
                                                 <span>
                                                     <v-btn :href="sesion.link" icon class="ma-3"> <v-icon x-large
                                                    color="red">mdi-youtube</v-icon></v-btn>
-                                                   <v-btn :href="sesion.ordenDelDia" icon> <v-icon
-                                                       x-large>mdi-clipboard-list-outline</v-icon> </v-btn>
-                                                </span>
+                                                   <v-btn :href="sesion.ordenDelDia" icon>  <v-icon
+                                                       x-large>mdi-clipboard-list-outline</v-icon> </v-btn> 
+                                                </span>  
                                          
-                                                       <v-list-item-subtitle> {{ sesion.nombre }}</v-list-item-subtitle>
+                                                       <v-list-item-subtitle> {{ sesion.nombre }}</v-list-item-subtitle>   
                                                       
-                                               </v-col>
-                                             
-                                 
-                                             
+                                               </v-card>
+                                            
+                                               
                                                    </v-list-item-group>
+                                                  
+                                 
                                       </v-col>
                                      
-
+                                    
 
                         </v-row>
                         
