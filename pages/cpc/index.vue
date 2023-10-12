@@ -249,16 +249,16 @@ export default {
             },
 
             ],
-            integrantes: [{
-                nombre: 'Jafia Pacheco Valtierra',
-                cargo: 'Consejera Presidenta del Consejo de Participación Ciudadana.',
-                foto: 'cpc-jpv.jpg',
-                img: 'cc-cpc.png',
-                mail: 'jafia.pacheco@cpccoahuila.org.mx'
-            },
+            integrantes: [//{
+                //nombre: 'Jafia Pacheco Valtierra',
+               // cargo: 'Consejera Presidenta del Consejo de Participación Ciudadana.',
+               // foto: 'cpc-jpv.jpg',
+                //img: 'cc-cpc.png',
+                //mail: 'jafia.pacheco@cpccoahuila.org.mx'
+           // },
             {
                 nombre: 'Miguel Francisco Crespo Alvarado',
-                cargo: 'Consejero del Consejo de Participación Ciudadana.',
+                cargo: 'Consejero Presidente del Consejo de Participación Ciudadana.',
                 foto: 'cpc-mfca.jpg',
                 img: 'cc-cpc.png',
                 mail: 'miguel.crespo@cpccoahuila.org.mx'
