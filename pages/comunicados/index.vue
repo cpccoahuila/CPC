@@ -53,6 +53,12 @@
                 },
 
                 comunicados: [
+                {
+                    titulo: "Comunicado",
+                    texto: "Boletín CPC/01/2023-24",
+                    link: "Ver comunicado",
+                    documento: "/Boletín CPC012023-24.pdf"
+                    },
                     {
                     titulo: "Comunicado",
                     texto: "Posicionamiento de la Red de Comités de Participación respecto a la iniciativa que pretende eliminar a la Secretaría Ejecutiva del Sistema Nacional Anticorrupción",
