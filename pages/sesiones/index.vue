@@ -115,7 +115,13 @@ export default {
                 {
                     year: 'Sesiones Ordinarias 2023',
                     data: [
-                    {
+                        {
+                            link: 'https://youtu.be/RqPYMMzQybo',
+                            nombre: 'Sesión Ordinaria - 12 de octubre',
+                            ordenDelDia: '/sesiones'
+                        },
+
+                        {
                             link: 'https://youtu.be/CdMmALt4MME?si=hqC4KR5iVw1xRVVx',
                             nombre: 'Sesión Ordinaria - 26 de septiembre',
                             ordenDelDia: '/sesiones'
