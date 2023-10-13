@@ -118,7 +118,7 @@ export default {
                         {
                             link: 'https://youtu.be/RqPYMMzQybo',
                             nombre: 'Sesión Ordinaria - 12 de octubre',
-                            ordenDelDia: '/sesiones'
+                            ordenDelDia: 'https://drive.google.com/file/d/1XAA0-lp5io9jyxeShHRooR0c5q1D8gDQ/view?usp=sharing'
                         },
 
                         {
@@ -139,7 +139,7 @@ export default {
                         {
                             link: 'https://youtu.be/YaTs934W_gw?si=OLeD6D-EbJc7nhXq',
                             nombre: 'Sesión Ordinaria - 1 de junio',
-                            ordenDelDia: '/#'
+                            ordenDelDia: '/sesiones'
                         },
                         {
                             link: 'https://youtu.be/eiaG7j_uSN4?si=9gJllRKiQT-pSCVv',
