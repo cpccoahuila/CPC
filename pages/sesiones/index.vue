@@ -315,6 +315,11 @@ export default {
                     year: 'Sesiones Extraordinarias 2023',
                     data: [
                         {
+                            link: 'https://youtu.be/ggpEhzEcVmY',
+                            nombre: 'Sesión Ordiaria - 17 de octubre',
+                            ordenDelDia: '/sesiones'
+                        },
+                        {
                             link: 'https://youtu.be/diTV9DHn-NI?si=RgiFpGnqHrffIKo1',
                             nombre: 'Sesión Ordiaria - 10 de diciembre',
                             ordenDelDia: '/sesiones'
