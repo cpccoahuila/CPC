@@ -33,16 +33,6 @@
                                     <div class="w-25 mr-2">
                                     </div>
                                     <div class="media-body align-self-end">
-                                        <h5 class="mt-0">Jafia Pacheco Valtierra</h5>
-                                        <a
-                                            href="mailto:jafia.pacheco@cpccoahuila.org.mx">jafia.pacheco@cpccoahuila.org.mx</a>
-                                    </div>
-                                </div>
-
-                                <div class="media mb-4">
-                                    <div class="w-25 mr-2">
-                                    </div>
-                                    <div class="media-body align-self-end">
                                         <h5 class="mt-0">Miguel Francisco Crespo Alvarado</h5>
                                         <a
                                             href="mailto:miguel.crespo@cpccoahuila.org.mx">miguel.crespo@cpccoahuila.org.mx</a>
