@@ -14,13 +14,13 @@
                 <v-card class="mt-3 pa-10"  color="article">
                     <v-col aling="center" justify="center" >
 
-                       <!-- <div v-for=" e in indicadores">
+                       <div v-for=" e in indicadores">
                            <h1>{{e.titulo}}</h1>
                            <h4>{{e.texto}}</h4>
                           <a :href="require('@/static/indicadores' + e.documento)">{{e.link}}</a> 
                            
 
-                        </div>-->
+                        </div>
                         
                   
                     </v-col>
@@ -51,34 +51,34 @@
                     icon: 'mdi-comma-circle-outline'
                 },
 
-                //indicadores: [
-                    //{
-                    //titulo: "Corporación Latinobarómetro, Informe 2023",
-                    //texto: "",
-                    //link: "Ver",
-                    //documento: "/latinobarometro-informe-2023.pdf"
-                   // },
-                    //{
-                    //titulo: "Transparencia Internacional",
-                    //texto: "",
-                    //link: "Ver",
-                    //documento: "/transparencia-internacional.pdf"
-                    //},
-                    //{
-                    //titulo: "Coahuila ENVIPE 2023",
-                    //texto: "",
-                    //link: "Ver",
-                    //documento: "/coahuila-envipe-2023.pdf"
-                    //},
-                    //{
-                    //titulo: "IMCO 2023",
-                    //texto: "",
-                    //link: "Ver",
-                    //documento: "/imco-2023.pdf"
-                    //},
+                indicadores: [
+                    {
+                    titulo: "Corporación Latinobarómetro, Informe 2023",
+                    texto: "",
+                    link: "Ver",
+                    documento: "/latinobarometro-informe-2023.pdf"
+                   },
+                    {
+                    titulo: "Transparencia Internacional",
+                    texto: "",
+                    link: "Ver",
+                    documento: "/transparencia-internacional.pdf"
+                    },
+                    {
+                    titulo: "Coahuila ENVIPE 2023",
+                    texto: "",
+                    link: "Ver",
+                    documento: "/coahuila-envipe-2023.pdf"
+                    },
+                    {
+                    titulo: "IMCO 2023",
+                    texto: "",
+                    link: "Ver",
+                    documento: "/imco-2023.pdf"
+                    },
 
 
-                //]
+                ]
             }
     
         },
