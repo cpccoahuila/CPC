@@ -54,6 +54,12 @@
 
                 comunicados: [
                     {
+                    titulo: "Boletín CPC 04",
+                    texto: "Boletín CPC/04/2023-24",
+                    link: "Ver comunicado",
+                    documento: "/Boletín 04 CPC 2023 2024.pdf"
+                    },
+                    {
                     titulo: "Boletín CPC 03",
                     texto: "Boletín CPC/03/2023-24",
                     link: "Ver comunicado",
