@@ -284,34 +284,38 @@ export default {
                 },
 
                 {
-                    nombre: 'TERESA GUAJARDO BERLANGA',
+                    nombre: 'ELMA MARISOL MARTÍNEZ GONZÁLEZ',
                     cargo: 'Secretaria de Fiscalización y Rendición de Cuentas del Estado de Coahuila de Zaragoza.',
-                    foto: 'cc-sefirc-tgb.jpg',
+                    foto: 'cc-sefirc-emmg.jpg',
                     img: 'cc-sefirc.png',
                     web: 'http://www.sefircoahuila.gob.mx/',
                     curriculum: [{
                             subtitulo: 'Formación Académica',
                             lista: [
-                                'Es Licenciada en Derecho por la Facultad de Jurisprudencia de la Universidad Autónoma de Coahuila.'
+                                'Es licenciada en Derecho egresada de la Facultad de Jurisprudencia de la Universidad Autónoma de Coahuila, especializada en Derecho a la Información, Fiscalización y Combate a la Corrupción por la Universidad Interamericana de Derechos Humanos, con estudios de maestría en Impuestos por la Universidad Autónoma del Noreste.'
                             ]
                         },
                         {
                             subtitulo: 'Cuenta con diversos diplomados, tales como:',
                             lista: [
-                                'Diplomado en Transparencia y Buen Gobierno por el Instituto Tecnológico de Estudios Superiores de Monterrey.',
-                                'Diplomado en Políticas Públicas, Gerencia y Gobierno Local por el Colegio Nacional de Ciencias Políticas y Administración Pública A.C.',
-                                'Diplomado en materia de Derechos Humanos por la Universidad Autónoma de Coahuila, Comisión Nacional de Derechos Humanos y Comisión de Derechos Humanos del Estado de Coahuila Cuenta con certificación en materia de Protección de Datos Personales en posesión de los particulares por el Instituto Nacional de Acceso a la Información.',
-                                'Diplomado Virtual de Contabilidad Gubernamental por la Asociación Nacional de Organismos de Fiscalización Superior y Control Gubernamental A.C.'
+                                'Normas Profesionales de Auditoría del Sistema Nacional de Fiscalización',
+                                'Ley General de Responsabilidades Administrativas',
+                                'Derecho Municipal.',
+                                'Derecho Laboral Burocrático.',
+                                'Seminario Nacional de Vinculación de los Sistemas Nacionales Anticorrupción, Fiscalización y Transparencia.'
+                                
+                                
                             ]
                         },
                         {
                             subtitulo: 'Otras Actividades Profesionales',
                             lista: [
-                                'Fue Presidenta del Instituto Coahuilense de Acceso a la Información Pública; del cual formó parte activa durante 13 años.',
-                                'Coordinó la Comisión de Educación de la COMAIP, impulso una nueva Ley de Acceso a la Información Pública y Protección de Datos Personales ante el Congreso del Estado de Coahuila de Zaragoza, convirtiéndose nuestro Estado y su Legislación referentes a nivel nacional en la materia.',
-                                'Dentro del Sistema Nacional de Transparencia ocupo la Secretaria Técnica de la Comisión de los Derechos Humanos, Equidad de Género e Inclusión Social.',
-                                'En el aspecto académico ha desempeñado actividades de docencia en educación universitaria de Instituciones Públicas y Privadas de la Región Carbonífera y de la Capital del Estado de Coahuila.',
-                                'Es Conferencista en materia de Transparencia, Acceso a la Información, Rendición de Cuentas y Protección de Datos Personales y ha escrito diversos artículos publicados en un medio de comunicación.'
+                        
+                                'Coordinadora Jurídica de la Tesorería y como Coordinadora de Responsabilidades y Asistencia Jurídica. Presidencia Municipal de Saltillo.',
+                                'Subdirectora en la Coordinación de Asuntos Jurídicos. Auditoría Superior del Estado.',
+                                'Directora de Seguimiento de Procedimientos. Secretaría de Fiscalización y Rendición de Cuentas.', 
+                                'Coordinadora y Facilitador Jurídico del “Proyecto de Modernización Normativa de la Secretaría de Seguridad Pública del Estado de Coahuila”. Secretaría de la Contraloría y Modernización Administrativa.',
+                                'Asesor Jurídico en el Voluntariado de Coahuila y Abogado Defensor. Procuraduría de la Familia del Sistema DIF Coahuila.'
                             ]
                         },
 
