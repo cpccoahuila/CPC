@@ -37,7 +37,7 @@
 
             </v-col>
 
-            
+
             <v-col cols="12" lg="7" sm="12">
                 <v-card color="cpc">
 
@@ -117,7 +117,7 @@
             </v-col>
             <v-divider class="ma-8"></v-divider>
             <v-col cols="12" class="mt-5">
-                
+
                 <v-card-text align="center">
                     <p class="text-h4 mb-10">ANTEPROYECTO:</p>
                     <a :href="require('@/static/cpc/' + anteproyecto)">
@@ -145,14 +145,14 @@ export default {
                 },
                 {
                     titulo: '',
-                    texto: 'Con la intención de establecer claramente el “por qué”, “para qué” y “cómo” de la Red de Participación Ciudadana, durante los meses de mayo a agosto de 2021 se convocó a un conjunto de asociaciones, universidades, colegios y cámaras a realizar ejercicios participativos que permitieran formar en conjunto las primeras * LINEAS ESTRATEGICAS de la Red.'
+                    texto: 'Con la intención de establecer claramente el “por qué”, “para qué” y “cómo” de la Red de Participación Ciudadana, durante los meses de mayo a agosto de 2021 se convocó a un conjunto de asociaciones, universidades, colegios y cámaras a realizar ejercicios participativos que permitieran formar en conjunto las primeras * LÍNEAS ESTRATÉGICAS de la Red.'
                 },
                 {
                     titulo: 'Misión',
                     texto: 'Ser un instrumento de participación que facilite involucrar a la ciudadanía en los asuntos de interés público, al impulsar proyectos que permitan reforzar las acciones de combate y prevención de la corrupción'
                 },
                 {
-                    titulo: 'Vision',
+                    titulo: 'Visión',
                     texto: 'Ser una red ciudadana reconocida por su capacidad para incidir en las decisiones sobre asuntos públicos conservando su carácter ciudadano, apartidista y libre de intereses ajenos a su propósito'
                 },
                 {

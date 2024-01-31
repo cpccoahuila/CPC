@@ -54,6 +54,12 @@
 
                 comunicados: [
                     {
+                    titulo: "Capacitación a municipios sobre la Política Estatal Anticorrupción",
+                    texto: "Capacitación a Municipios sobre la PEAC",
+                    link: "Ver comunicado",
+                    documento: "/boletin-gira.pdf"
+                    },
+                    {
                     titulo: "Boletín CPC 05",
                     texto: "Boletín CPC/05/2023-24",
                     link: "Ver comunicado",

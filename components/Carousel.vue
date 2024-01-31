@@ -56,6 +56,11 @@ export default {
             // },
 
             {
+                src: "banner-gira.png",
+                doc: "boletin-gira.pdf"
+                },
+
+            {
                 src: "banner-iniciativa.jpg",
                 doc: "Comunicado CPC.pdf"
             },
