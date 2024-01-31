@@ -17,7 +17,8 @@
                         <div v-for=" e in comunicados">
                            <h1>{{e.titulo}}</h1>
                            <h4>{{e.texto}}</h4>
-                          <a :href="require('@/static/comunicados' + e.documento)">{{e.link}}</a> 
+                          <a v-if="e.documento" :href="require('@/static/comunicados' + e.documento)">{{e.link}}</a> 
+                          <a v-if="e.to" :href="e.to">{{e.link}}</a> 
                            
 
                         </div>
@@ -57,7 +58,7 @@
                     titulo: "Capacitación a municipios sobre la Política Estatal Anticorrupción",
                     texto: "Capacitación a Municipios sobre la PEAC",
                     link: "Ver comunicado",
-                    documento: "/boletin-gira.pdf"
+                    to: "comunicados/capacitaciones"
                     },
                     {
                     titulo: "Boletín CPC 05",
