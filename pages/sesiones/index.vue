@@ -112,9 +112,39 @@ export default {
             },
             
     sesiones: [
+    {
+                    year: 'Sesiones Ordinarias 2024',
+                    data: [
+                        {
+                            link: 'https://youtu.be/-_OKRGY3iFk',
+                            nombre: 'Sesión Ordinaria - 1 de febrero',
+                            ordenDelDia: '/sesiones'
+                        },
+
+                        {
+                            link: 'https://youtu.be/eIjgrMIh7YA',
+                            nombre: 'Sesión Ordinaria - 11 de enero',
+                            ordenDelDia: '/sesiones'
+                        },
+                       
+                    ]
+
+
+                },
                 {
                     year: 'Sesiones Ordinarias 2023',
                     data: [
+                        {
+                            link: 'https://youtu.be/ylW570V3ZkY',
+                            nombre: 'Sesión Ordinaria - 1 de diciembre',
+                            ordenDelDia: '/sesiones'
+                        },
+
+                        {
+                            link: 'https://youtu.be/mTpC92B4Tbk',
+                            nombre: 'Sesión Ordinaria - 2 de noviembre',
+                            ordenDelDia: '/sesiones'
+                        },
                         {
                             link: 'https://youtu.be/RqPYMMzQybo',
                             nombre: 'Sesión Ordinaria - 12 de octubre',
