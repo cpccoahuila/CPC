@@ -55,6 +55,12 @@
 
                 comunicados: [
                     {
+                    titulo: "Boletín CPC 06",
+                    texto: "Boletín CPC/06/2023-24",
+                    link: "Ver comunicado",
+                    documento: "/Boletín 06 CPC 2023 2024.pdf"
+                    },
+                    {
                     titulo: "Capacitación a municipios sobre la Política Estatal Anticorrupción",
                     texto: "Capacitación a Municipios sobre la PEAC",
                     link: "Ver comunicado",
