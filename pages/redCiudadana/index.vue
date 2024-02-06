@@ -58,6 +58,15 @@
                         <p class="text-h5 mt-5">Convocatoria</p>
                         <p>El impulso es mayor, únete al esfuerzo por un Coahuila más transparente y libre de corrupción</p>
                         <v-btn elevation="3" color="" :href="require('@/static/cpc/' + convocatoria)"> Convocatoria</v-btn>
+                        <p class="text-h5 mt-5">Lineamientos</p>
+                        <p>En fecha 22 de Abril de 2022 en sesión ordinaria y mediante el acuerdo 38/2021-2022 se aprobaron por el CPC 
+                        los primeros lineamientos de la Red de participación ciudadana, basando su creación principalmente en las Líneas 
+                        Estratégicas establecidas por el primer grupo de integrantes de la red.</p>
+                        
+                        <p>Asimismo, se formó una Comisión de Normativa que se enfocará en hacer propuestas de adiciones, actualizaciones y 
+                        modificaciones a los lineamientos en la medida en que la red avance en su proceso de formación</p>
+                        <v-btn elevation="3" color="" :href="require('@/static/cpc/' + lineamientos)"> Lineamientos</v-btn>
+
 
                     </v-card-text>
 
@@ -167,6 +176,7 @@ export default {
             anteproyecto: 'lineas-estrategicas.pdf',
             cronograma: 'cronograma-2022.pdf',
             convocatoria: 'convocatoria.pdf',
+            lineamientos: 'lineamientos.pdf',
             integrantesRed: [
                 'ANADE LAGUNA',
                 'AIDH',
