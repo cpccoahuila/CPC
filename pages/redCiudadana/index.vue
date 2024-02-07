@@ -175,7 +175,7 @@ export default {
             },
             anteproyecto: 'lineas-estrategicas.pdf',
             cronograma: 'cronograma-2022.pdf',
-            convocatoria: 'convocatoria.pdf',
+            convocatoria: 'convocatoria-2022.pdf',
             lineamientos: 'lineamientos.pdf',
             integrantesRed: [
                 'ANADE LAGUNA',
