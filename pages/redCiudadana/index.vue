@@ -38,7 +38,7 @@
             </v-col>
 
 
-            <v-col cols="12" lg="7" sm="12">
+            <v-col cols="12">
                 <v-card color="cpc">
 
                     <v-card-title class=" justify-center">
@@ -59,12 +59,16 @@
                         <p>El impulso es mayor, únete al esfuerzo por un Coahuila más transparente y libre de corrupción</p>
                         <v-btn elevation="3" color="" :href="require('@/static/cpc/' + convocatoria)"> Convocatoria</v-btn>
                         <p class="text-h5 mt-5">Lineamientos</p>
-                        <p>En fecha 22 de Abril de 2022 en sesión ordinaria y mediante el acuerdo 38/2021-2022 se aprobaron por el CPC 
-                        los primeros lineamientos de la Red de participación ciudadana, basando su creación principalmente en las Líneas 
-                        Estratégicas establecidas por el primer grupo de integrantes de la red.</p>
-                        
-                        <p>Asimismo, se formó una Comisión de Normativa que se enfocará en hacer propuestas de adiciones, actualizaciones y 
-                        modificaciones a los lineamientos en la medida en que la red avance en su proceso de formación</p>
+                        <p>En fecha 22 de Abril de 2022 en sesión ordinaria y mediante el acuerdo 38/2021-2022 se aprobaron
+                            por el CPC
+                            los primeros lineamientos de la Red de participación ciudadana, basando su creación
+                            principalmente en las Líneas
+                            Estratégicas establecidas por el primer grupo de integrantes de la red.</p>
+
+                        <p>Asimismo, se formó una Comisión de Normativa que se enfocará en hacer propuestas de adiciones,
+                            actualizaciones y
+                            modificaciones a los lineamientos en la medida en que la red avance en su proceso de formación
+                        </p>
                         <v-btn elevation="3" color="" :href="require('@/static/cpc/' + lineamientos)"> Lineamientos</v-btn>
 
 
@@ -97,7 +101,7 @@
                 </v-card>
             </v-col>
 
-            <v-col cols="12" lg="5" sm="12">
+            <v-col cols="12">
                 <v-card color="cpc">
 
                     <v-card-title class="justify-center">
@@ -116,6 +120,8 @@
                             <v-timeline-item small right color="pink">{{ i }}</v-timeline-item>
 
                         </v-timeline>
+
+                       
 
                     </v-card-text>
                     <v-card-text align-self="center">
@@ -181,16 +187,27 @@ export default {
                 'ANADE LAGUNA',
                 'AIDH',
                 'Asociación Cívica de la Laguna',
+                'CANACINTRA',
+                'CANACO SALTILLO',
                 'CANACO Monclova',
                 'CANACO Francisco I.Madero',
+                'Centro de Estudios Superiores en Gestión Pública',
                 'CCI LAGUNA',
+                'Colegio de Contadores Públicos de Saltillo',
+                'COPARMEX COMISIÓN DE DEMOCRACIA',
                 'COPARMEX MUJERES',
                 'Fundación Merced',
                 'INCIDE FEMME',
+                'Instituto Mexicano de Ejecutivos de Finanzas',
                 'JÓVENES LÍDERES DE LA LAGUNA',
+                'KAENA MUJERES CON VALOR',
                 'KYBERNUS COAHUILA',
+                'Nuevas Opciones de Vida A.C.',
                 'UANE',
                 'Universidad Carolina',
+                'Universidad Iberoamericana',
+                'UVM',
+                
             ]
 
         }
