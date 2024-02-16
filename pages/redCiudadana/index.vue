@@ -10,6 +10,8 @@
 
                 </v-alert>
 
+                <v-img src="https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/sRDd8z9PspdESwXQfrq7%2Fc032mwMamBjZ8fjAPZUp%2F3.png?alt=media&token=1ee10911-3342-4ff7-9586-4869b3c258b0"></v-img>
+
                 <v-card class="mt-10 pa-5" color="article">
                     <v-row class="mt-5" v-for="(e, index) in page.presentacion" :key="index">
                         <v-col align="center" justify="center">
@@ -18,6 +20,7 @@
                             </v-card-title>
 
                         </v-col>
+                        
                         <v-divider vertical></v-divider>
                         <v-col cols="12" md="9" sm="12" align-self="center">
 
