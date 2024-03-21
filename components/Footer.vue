@@ -16,7 +16,10 @@
         <v-divider></v-divider>
 
         <v-card-text class="white--text">
-            {{ new Date().getFullYear() }} — <strong> Consejo de Participación Ciudadana del Sistema Anticorrupción del Estado de Coahuila de Zaragoza. </strong>
+            {{ new Date().getFullYear() }} — <strong> Consejo de Participación Ciudadana del Sistema Anticorrupción del Estado de Coahuila de Zaragoza. </strong> 
+        </v-card-text>
+        <v-card-text class="white--text">
+            <a href="https://cpccoahuila.github.io/" class="white--text">Historial de versiones antiguas</a>
         </v-card-text>
     </v-card>
 </v-footer>
