@@ -1,5 +1,3 @@
-
-
 <template>
     <v-container class="min-height-vh">
 
@@ -41,7 +39,7 @@
         </v-row>
     </v-container>
 </template>
-    
+
 <script>
 export default {
     name: 'Comunicados',
@@ -55,6 +53,19 @@ export default {
             },
 
             comunicados: [
+
+                {
+                    titulo: "Boletín CPC 09",
+                    texto: "Boletín CPC/09/2023-24",
+                    link: "Ver comunicado",
+                    documento: "/Boletín 09 CPC 2023 2024.pdf"
+                },
+                {
+                    titulo: "Boletín CPC 08",
+                    texto: "Boletín CPC/08/2023-24",
+                    link: "Ver comunicado",
+                    documento: "/Boletín 08 CPC 2023 2024.pdf"
+                },
                 {
                     titulo: "Boletín CPC 07",
                     texto: "Boletín CPC/07/2023-24",
@@ -119,10 +130,9 @@ export default {
     },
 }
 </script>
-    
+
 <style lang="scss" scoped>
 .min-height-vh {
     min-height: 70vh;
 }
 </style>
-    
