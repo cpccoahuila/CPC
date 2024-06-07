@@ -55,6 +55,12 @@ export default {
             comunicados: [
 
                 {
+                    titulo: "Boletín CPC 10",
+                    texto: "Boletín CPC/10/2023-24",
+                    link: "Ver comunicado",
+                    documento: "/Boletín 10 CPC 2023 2024.pdf"
+                },
+                {
                     titulo: "Boletín CPC 09",
                     texto: "Boletín CPC/09/2023-24",
                     link: "Ver comunicado",
