@@ -18,7 +18,7 @@
                             <v-col align="center" class="mb-5 text-xl-h">
                                 
                                 <v-img :width="750"
-                                    src="https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/sRDd8z9PspdESwXQfrq7%2FAjUDSMlpSDk2ohWJ2Gwo%2FWhatsApp%20Image%202024-07-15%20at%2014.12.08.jpeg?alt=media&token=9db33eea-3d15-4e0a-80e2-6e8bb1fe3757"></v-img>
+                                    src="https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/sRDd8z9PspdESwXQfrq7%2FAjUDSMlpSDk2ohWJ2Gwo%2FWhatsApp%20Image%202024-08-05%20at%2012.15.29.jpeg?alt=media&token=b34e97f2-417a-4f04-bd49-9d714d08fd6d"></v-img>
                                 <br></br>
                             </v-col>
                             <v-col align="center" class="mb-5 text-xl-h">
