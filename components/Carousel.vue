@@ -55,10 +55,10 @@ export default {
             //     to: "https://www.google.com/"
             // },
 
-            {
-                src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/sRDd8z9PspdESwXQfrq7%2FAjUDSMlpSDk2ohWJ2Gwo%2Fbanner-pracc-mpales.PNG?alt=media&token=1db38e78-7979-4c5e-958b-e3cc56651206",
-                to: "comunicados/prac-mpales"
-            },
+            //{
+            //    src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/sRDd8z9PspdESwXQfrq7%2FAjUDSMlpSDk2ohWJ2Gwo%2Fbanner-pracc-mpales.PNG?alt=media&token=1db38e78-7979-4c5e-958b-e3cc56651206",
+            //    to: "comunicados/prac-mpales"
+            //},
 
             {
                 src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/STATIC%2FGira%20de%20capacitaci%C3%B3n%20(1).png?alt=media&token=9002d1fc-32b1-45c0-b72c-0d8ae2a19134",
