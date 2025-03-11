@@ -249,14 +249,7 @@ export default {
             },
 
             ],
-            integrantes: [//{
-                //nombre: 'Jafia Pacheco Valtierra',
-               // cargo: 'Consejera Presidenta del Consejo de Participación Ciudadana.',
-               // foto: 'cpc-jpv.jpg',
-                //img: 'cc-cpc.png',
-                //mail: 'jafia.pacheco@cpccoahuila.org.mx'
-           // },
-            
+            integrantes: [ 
             {
                 nombre: 'Yolanda Guadalupe Montes Martínez',
                 cargo: 'Consejera Presidente del Consejo de Participación Ciudadana.',
@@ -270,6 +263,27 @@ export default {
                 foto: 'cpc-jcge.jpg',
                 img: 'cc-cpc.png',
                 mail: 'carlos.guzman@cpccoahuila.org.mx'
+            },
+            {
+                nombre: 'Karla Ivonne Natividad González',
+                cargo: 'Consejera del Consejo de Participación Ciudadana.',
+                foto: 'cpc-king.png',
+                img: 'cc-cpc.png',
+                mail: 'karla.natividad@cpccoahuila.org.mx'
+            },
+            {
+                nombre: 'Carlos Antonio Franco Flores',
+                cargo: 'Consejero del Consejo de Participación Ciudadana.',
+                foto: 'cpc-caff.png',
+                img: 'cc-cpc.png',
+                mail: 'carlos.franco@cpccoahuila.org.mx'
+            },
+            {
+                nombre: 'Diana Marisol Flores Rivera',
+                cargo: 'Consejera del Consejo de Participación Ciudadana.',
+                foto: 'cpc-dmfr.png',
+                img: 'cc-cpc.png',
+                mail: 'diana.flores@cpccoahuila.org.mx'
             },
           
 

@@ -33,16 +33,6 @@
                                     <div class="w-25 mr-2">
                                     </div>
                                     <div class="media-body align-self-end">
-                                        <h5 class="mt-0">Miguel Francisco Crespo Alvarado</h5>
-                                        <a
-                                            href="mailto:miguel.crespo@cpccoahuila.org.mx">miguel.crespo@cpccoahuila.org.mx</a>
-                                    </div>
-                                </div>
-
-                                <div class="media mb-4">
-                                    <div class="w-25 mr-2">
-                                    </div>
-                                    <div class="media-body align-self-end">
                                         <h5 class="mt-0">Yolanda Guadalupe Montes Martínez</h5>
                                         <a
                                             href="mailto:yolanda.montes@cpccoahuila.org.mx">yolanda.montes@cpccoahuila.org.mx</a>
@@ -63,9 +53,29 @@
                                     <div class="w-25 mr-2">
                                     </div>
                                     <div class="media-body align-self-end">
-                                        <h5 class="mt-0">Karla Samperio Flores</h5>
+                                        <h5 class="mt-0">Karla Ivonne Natividad González</h5>
                                         <a
-                                            href="mailto:karla.samperio@cpccoahuila.org.mx">karla.samperio@cpccoahuila.org.mx</a>
+                                            href="mailto:karla.natividad@cpccoahuila.org.mx">karla.natividad@cpccoahuila.org.mx</a>
+                                    </div>
+                                </div>
+
+                                <div class="media mb-4">
+                                    <div class="w-25 mr-2">
+                                    </div>
+                                    <div class="media-body align-self-end">
+                                        <h5 class="mt-0">Carlos Antonio Franco Flores</h5>
+                                        <a
+                                            href="mailto:carlos.franco@cpccoahuila.org.mx">carlos.franco@cpccoahuila.org.mx</a>
+                                    </div>
+                                </div>
+
+                                <div class="media mb-4">
+                                    <div class="w-25 mr-2">
+                                    </div>
+                                    <div class="media-body align-self-end">
+                                        <h5 class="mt-0">Diana Marisol Flores Rivera</h5>
+                                        <a
+                                            href="mailto:diana.flores@cpccoahuila.org.mx">diana.flores@cpccoahuila.org.mx</a>
                                     </div>
                                 </div>
 
@@ -78,7 +88,7 @@
                 </div>
 
             </v-col>
-            <v-col cols="12">
+            <!-- <v-col cols="12">
                 <v-card>
                     <v-card-title class="justify-center mb-4">
                         <v-icon x-large :color="page.color">mdi-email-edit-outline</v-icon>
@@ -92,7 +102,7 @@
 
                 </v-card>
 
-            </v-col>
+            </v-col> -->
         </v-row>
 
     </v-container>
