@@ -242,7 +242,7 @@ export default {
                     cargo: 'Titular de la Fiscalía Especializada en Delitos por Hechos de Corrupción.',
                     foto: 'cc-fech-ksf.png',
                     img: 'cc-fehc.png',
-                    
+                    web:'https://sitio.fgecoahuila.gob.mx/',
                     curriculum: [{
                             subtitulo: 'Datos Profesionales',
                             lista: []
