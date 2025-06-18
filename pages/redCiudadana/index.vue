@@ -210,11 +210,11 @@ export default {
                 'KAENA MUJERES CON VALOR',
                 'KYBERNUS COAHUILA',
                 'PARTICIPACIÓN CIUDADANA 29 LAGUNA A.C.',
-                'UANE',
+                'Universidad Americana del Noreste',
                 'UNIVERSIDAD AUTÓNOMA DE LA LAGUNA',
                 'Universidad Carolina',
-                'Universidad Iberoamericana',
-                'UVM',
+                'Universidad Iberoamericana Centro de Extensión Saltillo',
+                'Universidad del Valle de México Campus Saltillo',
                 
             ]
 
