@@ -13,7 +13,7 @@
                 <v-card class="mt-3 pa-10" color="article">
                     <v-col aling="center" justify="center">
 
-                        <div v-for=" e in comunicados">
+                        <div v-for="e in comunicados">
                             <h1>{{ e.titulo }}</h1>
                             <h4>{{ e.texto }}</h4>
                             <a v-if="e.documento" :href="require('@/static/comunicados' + e.documento)">{{ e.link }}</a>
@@ -55,11 +55,23 @@ export default {
             comunicados: [
 
                 {
+
+                    titulo: "Proyecto de Investigación: Educación y Sociedad con integridad, ética y valores",
+                    texto: "Proyecto de Investigación: Educación y Sociedad con integridad, ética y valores",
+                    link: "Ver comunicado",
+                    documento: "/Proyecto de Investigacion.pdf"
+
+                
+
+                },
+
+                {
                     titulo: "Boletín CPC 10",
                     texto: "Boletín CPC/10/2023-24",
                     link: "Ver comunicado",
                     documento: "/Boletín 10 CPC 2023 2024.pdf"
                 },
+
                 {
                     titulo: "Boletín CPC 09",
                     texto: "Boletín CPC/09/2023-24",
