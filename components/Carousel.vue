@@ -59,20 +59,26 @@ export default {
                 //    src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/sRDd8z9PspdESwXQfrq7%2FAjUDSMlpSDk2ohWJ2Gwo%2Fbanner-pracc-mpales.PNG?alt=media&token=1db38e78-7979-4c5e-958b-e3cc56651206",
                 //    to: "comunicados/prac-mpales"
                 //},
-                {
-                    src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FQjXLjUOpI86yFY7FTrPn%2FBanners%20p%C3%A1gina%20web%20(7).png?alt=media&token=2e8b175c-9c86-4578-8634-c4304a675da1",
-                    to: "https://paa.sesna.gob.mx/"
-                 },
+                //{
+                //    src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FQjXLjUOpI86yFY7FTrPn%2FBanners%20p%C3%A1gina%20web%20(7).png?alt=media&token=2e8b175c-9c86-4578-8634-c4304a675da1",
+                //    to: "https://paa.sesna.gob.mx/"
+                // },
 
 
-                {
-                    src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FQjXLjUOpI86yFY7FTrPn%2FWhatsApp%20Image%202025-06-18%20at%2016.39.39%20VERDE.jpeg?alt=media&token=e92b3156-15bb-4315-8c53-5426736e1aa0",
-                    to: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FQjXLjUOpI86yFY7FTrPn%2FConvocatoria%20participa%20Saltillo%202025%20VERDE.pdf?alt=media&token=e6508050-89e9-44a7-a45a-fb25cbab24cc"
-                },
+                //{
+                //    src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FQjXLjUOpI86yFY7FTrPn%2FWhatsApp%20Image%202025-06-18%20at%2016.39.39%20VERDE.jpeg?alt=media&token=e92b3156-15bb-4315-8c53-5426736e1aa0",
+                //    to: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FQjXLjUOpI86yFY7FTrPn%2FConvocatoria%20participa%20Saltillo%202025%20VERDE.pdf?alt=media&token=e6508050-89e9-44a7-a45a-fb25cbab24cc"
+                //},
+
+                //{
+                //    src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FQjXLjUOpI86yFY7FTrPn%2FWhatsApp%20Image%202025-06-18%20at%2016.39.39%20ROSA.jpeg?alt=media&token=5dcc3f01-9316-4a27-9343-1e28366e6657",
+                //    to: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FQjXLjUOpI86yFY7FTrPn%2FCOMISIONES%20SECTORIALES%20ROSA.pdf?alt=media&token=75f022f7-3b59-4367-b810-cd53e00f5750"
+                //},
 
                 {
-                    src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FQjXLjUOpI86yFY7FTrPn%2FWhatsApp%20Image%202025-06-18%20at%2016.39.39%20ROSA.jpeg?alt=media&token=5dcc3f01-9316-4a27-9343-1e28366e6657",
-                    to: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FQjXLjUOpI86yFY7FTrPn%2FCOMISIONES%20SECTORIALES%20ROSA.pdf?alt=media&token=75f022f7-3b59-4367-b810-cd53e00f5750"
+                    src:"https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FQjXLjUOpI86yFY7FTrPn%2FBanners%20p%C3%A1gina%20web%20(8)%20(1).png?alt=media&token=91da0f00-6e8c-4f86-99a1-cb1eee34e782",
+                    to:"https://www.cpccoahuila.org.mx/_nuxt/img/Proyecto%20de%20Investigacion.f41f7d4.pdf"
+
                 },
 
                 {
