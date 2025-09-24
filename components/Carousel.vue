@@ -80,6 +80,12 @@ export default {
                     to:"https://www.cpccoahuila.org.mx/_nuxt/img/Proyecto%20de%20Investigacion.f41f7d4.pdf"
 
                 },
+                 {
+                    src:"https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FQjXLjUOpI86yFY7FTrPn%2FBanners%20p%C3%A1gina%20web%20(9).png?alt=media&token=5a787a8d-4754-463b-ab1e-92d6f0d093d8",
+                    to:"https://documents.un.org/doc/undoc/ltd/g25/102/74/pdf/g2510274.pdf"
+
+                },
+
 
                 {
                     src: "https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/STATIC%2FGira%20de%20capacitaci%C3%B3n%20(1).png?alt=media&token=9002d1fc-32b1-45c0-b72c-0d8ae2a19134",
