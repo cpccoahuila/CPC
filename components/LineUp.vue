@@ -23,9 +23,9 @@ export default {
     data() {
         return {
             cc: [{
-                    img: 'pj-logo-azul.png',
+                    img: 'cc-pjecz.png',
                     web: 'https://www.pjecz.gob.mx/',
-                    size: '100'
+                    size: '180'
                 },
                 {
                     img: 'ASEC.png',
@@ -33,20 +33,20 @@ export default {
                     size: '150'
                 },
                 {
-                    img: 'FEHC -vertical.png',
+                    img: 'cc-fehc.png',
                     web: 'https://www.fehc.gob.mx/',
-                    size: '85'
+                    size: '150'
                 },
                 {
                     img: 'cc-sefirc.png',
                     web: 'http://www.sefircoahuila.gob.mx/',
-                    size: '120'
+                    size: '200'
                 },
 
                 {
                     img: 'cc-tjacz.png',
                     web: 'http://www.tjacoahuila.org/',
-                    size: '100'
+                    size: '180'
                 },
                 {
                     img: 'cpc.png',
