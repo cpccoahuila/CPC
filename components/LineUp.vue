@@ -42,11 +42,6 @@ export default {
                     web: 'http://www.sefircoahuila.gob.mx/',
                     size: '120'
                 },
-                {
-                    img: 'cc-ica.png',
-                    web: 'http://www.icai.org.mx/',
-                    size: '110'
-                },
 
                 {
                     img: 'cc-tjacz.png',
