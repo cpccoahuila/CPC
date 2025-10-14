@@ -259,6 +259,13 @@ export default {
                 mail: 'carlos.guzman@cpccoahuila.org.mx'
             },
             {
+                nombre: 'Yolanda Guadalupe Montes Martínez',
+                cargo: 'Consejera del Consejo de Participación Ciudadana.',
+                foto: 'cpc-ygmm.jpg',
+                img: 'cc-cpc.png',
+                mail: 'yolanda.montes@cpccoahuila.org.mx'
+            },
+            {
                 nombre: 'Karla Ivonne Natividad González',
                 cargo: 'Consejera del Consejo de Participación Ciudadana.',
                 foto: 'cpc-king.png',
