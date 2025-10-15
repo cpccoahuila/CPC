@@ -76,8 +76,8 @@ export default {
                 //},
 
                 {
-                    src:"https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FQjXLjUOpI86yFY7FTrPn%2FBanners%20p%C3%A1gina%20web%20(8)%20(1).png?alt=media&token=91da0f00-6e8c-4f86-99a1-cb1eee34e782",
-                    to:"https://www.cpccoahuila.org.mx/_nuxt/img/Proyecto%20de%20Investigacion.f41f7d4.pdf"
+                    src:"https://firebasestorage.googleapis.com/v0/b/transparenciaseac.appspot.com/o/I7kmevbBVPO8yR9G0mK9%2FQjXLjUOpI86yFY7FTrPn%2FBanners%20p%C3%A1gina%20web%20(11).png?alt=media&token=dd501d5d-4464-42ff-930a-81fce49eb347",
+                    to:"/"
 
                 },
                  {
