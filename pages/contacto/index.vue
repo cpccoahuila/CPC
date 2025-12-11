@@ -29,15 +29,7 @@
                                 <div class="mb-5 text-xl-h4 text-md-h5 ">{{ e.dependencia }}</div>
                                 <div class="mb-5 text-subtitle-2 font-weight-bold" v-for="(i, index) in e.datos"
                                     :key="index"> {{ i }}</div>
-                                <div class="media mb-4">
-                                    <div class="w-25 mr-2">
-                                    </div>
-                                    <div class="media-body align-self-end">
-                                        <h5 class="mt-0">Yolanda Guadalupe Montes Martínez</h5>
-                                        <a
-                                            href="mailto:yolanda.montes@cpccoahuila.org.mx">yolanda.montes@cpccoahuila.org.mx</a>
-                                    </div>
-                                </div>
+                               
 
                                 <div class="media mb-4">
                                     <div class="w-25 mr-2">
